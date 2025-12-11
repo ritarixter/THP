@@ -1,0 +1,23 @@
+{
+  "home": {
+    "title": "Home"
+  },
+  "news": {
+    "title": "Latest news"
+  },
+  "contacts": {
+    "title": "Organization's contacts"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page Not Found",
+    "message": "Sorry, the page you are looking for does not exist or has been moved.",
+    "homeButton": "Go Back Home"
+  },
+  "header": {
+    "home": "Home",
+    "contacts": "Contacts",
+    "news": "News"
+  },
+  "footer": {}
+}

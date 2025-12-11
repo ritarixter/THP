@@ -5,10 +5,27 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "react-router";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 import type { Route } from "./+types/root";
-import "./app.css";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import "./i18n";
+import "./styles/reset.scss";
+import "./styles/global.scss";
+import "./styles/responsive.scss";
+
+export async function loader({ request }: Route.LoaderArgs) {
+  const url = new URL(request.url);
+  const lang = url.searchParams.get("lang") || "en";
+
+  return {
+    lang: lang === "de" ? "de" : "en",
+  };
+}
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -19,7 +36,7 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap",
   },
 ];
 
@@ -42,7 +59,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  const { lang } = useLoaderData<typeof loader>();
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    if (i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, i18n]);
+
+  return (
+    <>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

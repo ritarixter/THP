@@ -1,0 +1,23 @@
+{
+  "home": {
+    "title": "Startseite"
+  },
+  "news": {
+    "title": "Neueste Nachrichten"
+  },
+  "contacts": {
+    "title": "Kontakte der Organisation"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Seite nicht gefunden",
+    "message": "Entschuldigung, die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "homeButton": "Zurück zur Startseite"
+  },
+  "header": {
+    "home": "Startseite",
+    "contacts": "Kontakte",
+    "news": "Nachrichten"
+  },
+  "footer": {}
+}

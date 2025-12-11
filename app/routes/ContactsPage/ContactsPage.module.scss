@@ -1,0 +1,12 @@
+@use "../../styles/responsive.scss" as *;
+
+.contactsPage {
+}
+
+@include responsive(tablet) {
+  // стили для планшета
+}
+
+@include responsive(phone) {
+  // стили для телефона
+}

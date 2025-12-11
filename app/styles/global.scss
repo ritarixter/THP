@@ -1,0 +1,27 @@
+:root {
+  --cl-blue-3: #4878fe;
+
+  --cl-gray-1: #f7f8fa;
+  --cl-gray-3: #575f6c;
+  --cl-gray-5: #333333;
+
+  --cl-green-3: #70f181;
+
+  --cl-black: #1f1f1f;
+  --cl-white: #ffffff;
+
+  --transition-base: all 0.3s ease;
+}
+
+body {
+  color: var(--cl-black);
+  background-color: var(--cl-white);
+  font-size: 16px;
+  font-family: Ubuntu, sans-serif;
+}
+
+.wrapper {
+  max-width: 1240px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
