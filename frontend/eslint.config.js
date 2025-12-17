@@ -31,6 +31,8 @@ export default [
         localStorage: "readonly",
         URL: "readonly",
         React: "readonly",
+        setTimeout: "readonly",
+        clearTimeout: "readonly",
       },
     },
     plugins: {

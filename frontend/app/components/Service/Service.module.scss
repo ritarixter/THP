@@ -1,0 +1,51 @@
+.services {
+  display: grid;
+  grid-template-columns: 176px 1fr;
+}
+.tabs {
+  background: var(--cl-blue-3);
+  padding: 126px 0;
+
+  &__button {
+    color: var(--cl-gray-1);
+    padding: 29px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    background: transparent;
+    position: relative;
+    transition:
+      background-color 0.4s ease,
+      color 0.4s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -23px;
+      width: 24px;
+      height: 100%;
+      background: var(--cl-green-3);
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+      opacity: 0;
+      transform: translateX(-10px);
+      z-index: 5;
+      transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+    }
+
+    &_active {
+      background: var(--cl-green-3);
+
+      &::before {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
