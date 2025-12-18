@@ -19,5 +19,92 @@
     "contacts": "Contacts",
     "news": "News"
   },
-  "footer": {}
+  "footer": {},
+  "homePage": {
+    "introTitle": "THP Steuerkontor: <br /> Shape Your Expertise.<br /> Secure Your Future.",
+    "aboutUs": {
+      "title": "About Us",
+      "paragraph1": "THP Steuerkontor Steuerberatungsgesellschaft mbH is a locally rooted and nationally active tax consulting company, which was founded in 1994 under the name ADVISA in Schermbeck. Our head office in Schermbeck has been located since over 20 years in the industrial park in Schermbeck.",
+      "paragraph2": "In our firm, our clients benefit from more than 20 years of experience, which helps us to meet the diverse complex requirements. THP Steuerkontor Steuerberatungsgesellschaft mbH builds on long-term partnerships. It is active as a service provider for commercial and freelance companies of all industries and legal forms as well as private individuals, associations and foundations.",
+      "paragraph3": "With everything we have to offer in terms of knowledge, skills and commitment, we offer you comprehensive structuring advice in all tax law and business management issues at reasonable fees. Individual solutions and the goal of doing something special for each client characterize our business philosophy.",
+      "learnMore": "Learn More"
+    },
+    "servicesTitle": "Our Services"
+  },
+  "services": {
+    "tax": {
+      "title": "Tailored Tax Solutions for Maximum Legal Savings",
+      "content": [
+        [
+          "Preparation of income tax, corporation tax, trade tax and sales tax returns",
+          "Consulting Agricultural and Forestry"
+        ],
+        ["Taking over negotiations with the tax office", "Appeals"],
+        ["Obtaining binding information"],
+        [
+          "Advice on all tax issues",
+          "Support and encouragement in tax investigations and proceedings"
+        ],
+        ["Control of tax assessments", "Support and advice during tax audits"],
+        ["Tax restructuring", "Company succession"]
+      ]
+    },
+    "accounting": {
+      "title": "Accounting",
+      "content": [
+        [
+          "Special accounting for agriculture and forestry, car dealerships, craftsmen and health professions"
+        ],
+        [
+          "Preparation and timely submission of advance VAT returns and recapitulative reports"
+        ],
+        [],
+        [
+          "Establishment and management of financial accounting including asset accounting"
+        ],
+        ["Monthly business evaluations and business analyses"]
+      ]
+    },
+    "audit": {
+      "title": "Audit",
+      "content": [
+        [
+          "Support and accompaniment in tax investigations and voluntary disclosures"
+        ],
+        [],
+        [],
+        ["Taking over negotiations with the tax office"],
+        ["Support and advice during tax audits"]
+      ]
+    },
+    "consulting": {
+      "title": "Management Consulting",
+      "content": [
+        [
+          "Advice on acquisitions or sales of companies as well as on all types of corporate restructuring"
+        ],
+        ["Advice on all financial and business issues"],
+        [],
+        [
+          "Preparation of planned balance sheets and planned profit and loss calculations"
+        ],
+        ["Carrying out company valuations"],
+        [
+          "Business analyses of the net assets, financial position and results of operations"
+        ]
+      ]
+    },
+    "payroll": {
+      "title": "Payroll Accounting",
+      "content": [
+        ["Preparation of payroll accounting"],
+        ["Labour cost optimisation nettomaxx"],
+        [],
+        [
+          "Legal advice in cooperation with the law firm Friedrich, Westhues-Wedig & Coll."
+        ],
+        ["International posting of workers"]
+      ]
+    }
+  }
 }

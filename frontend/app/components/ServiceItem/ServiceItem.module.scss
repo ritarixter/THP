@@ -1,8 +1,12 @@
+@use "../../styles/responsive.scss" as *;
+
 .content {
   background: var(--cl-gray-1);
   padding: 88px;
-  position: relative;
   min-height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   animation: fadeIn 0.4s ease;
   height: 100%;
 
@@ -14,11 +18,19 @@
     line-height: 1.35;
   }
 
+  &__wrapper {
+    width: max-content;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__center {
+    position: relative;
+  }
+
   &__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     width: 525px;
     height: 525px;
     border-radius: 50%;
@@ -58,31 +70,30 @@
     padding-left: 20px;
     margin: 0;
   }
-
   &__1 {
-    top: 17%;
-    left: 13%;
+    top: -30%;
+    left: -66%;
     animation-delay: 0.1s;
     animation-fill-mode: both;
   }
 
   &__2 {
-    top: 40%;
-    left: 13%;
+    top: 36%;
+    left: -63%;
     animation-delay: 0.2s;
     animation-fill-mode: both;
   }
 
   &__3 {
-    top: 59%;
-    left: 13%;
+    top: 69%;
+    left: -67%;
     animation-delay: 0.3s;
     animation-fill-mode: both;
   }
 
   &__4 {
-    top: 31%;
-    right: 15%;
+    top: 21%;
+    right: -68%;
     align-items: flex-end;
     justify-content: end;
     animation-delay: 0.15s;
@@ -94,8 +105,8 @@
   }
 
   &__5 {
-    top: 45%;
-    right: 17%;
+    top: 43%;
+    right: -59%;
     align-items: flex-end;
     justify-content: end;
     animation-delay: 0.25s;
@@ -103,8 +114,8 @@
   }
 
   &__6 {
-    top: 65%;
-    right: 15%;
+    top: 86%;
+    right: -67%;
     align-items: flex-end;
     justify-content: end;
     animation-delay: 0.35s;
@@ -112,6 +123,116 @@
 
     & ul {
       position: absolute;
+    }
+  }
+}
+
+.content__mobile {
+  display: none;
+  padding: 50px 20px;
+  animation: slideDown 0.6s linear;
+  overflow: hidden;
+
+  &_lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  &_list {
+    list-style-type: disc;
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: calc(50% - 12px);
+    margin: 0;
+  }
+}
+
+@include responsive(fullscreen) {
+  .content {
+    padding: 60px;
+    min-height: 600px;
+
+    &__icon {
+      width: 400px;
+      height: 400px;
+      font-size: 200px;
+    }
+    .item {
+      scale: 0.75;
+
+      &__1,
+      &__3,
+      &__2 {
+        left: -79%;
+      }
+
+      &__3 {
+        top: 65%;
+      }
+
+      &__4,
+      &__5,
+      &__6 {
+        right: -75%;
+      }
+
+      &__2 {
+        top: 29%;
+        left: -75%;
+      }
+      &__5 {
+        right: -70%;
+        top: 39%;
+      }
+    }
+  }
+}
+
+@include responsive(screen) {
+  .content {
+    display: none;
+
+    &__mobile {
+      display: block;
+    }
+
+    &__icon {
+      width: 320px;
+      height: 320px;
+      margin: 0 auto;
+
+      font-size: 120px;
+    }
+  }
+}
+
+@include responsive(phone) {
+  .content {
+    display: none;
+
+    &__mobile {
+      display: block;
+      padding: 35px 20px;
+      &_lists {
+        gap: 16px;
+      }
+      &_list {
+        font-size: 14px;
+      }
+
+      & li {
+        word-break: break-word;
+      }
+    }
+
+    &__icon {
+      width: 250px;
+      height: 250px;
+
+      font-size: 100px;
     }
   }
 }
@@ -127,11 +248,11 @@
 
 @keyframes scaleIn {
   from {
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: scale(0.8);
     opacity: 0;
   }
   to {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -144,5 +265,16 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 2000px;
+    opacity: 1;
   }
 }
