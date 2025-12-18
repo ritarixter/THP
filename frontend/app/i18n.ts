@@ -8,12 +8,23 @@ const resources = {
   de: { translation: de },
 };
 
+// Получаем язык на сервере и клиенте одинаково
+const getInitialLanguage = () => {
+  if (typeof window === "undefined") {
+    return "en"; // На сервере всегда en
+  }
+  return localStorage.getItem("language") || "en";
+};
+
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en",
+  lng: getInitialLanguage(),
   fallbackLng: "en",
   interpolation: {
     escapeValue: false,
+  },
+  react: {
+    useSuspense: false, // Отключаем Suspense для SSR
   },
 });
 

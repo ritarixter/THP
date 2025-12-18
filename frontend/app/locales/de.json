@@ -19,5 +19,97 @@
     "contacts": "Kontakte",
     "news": "Nachrichten"
   },
-  "footer": {}
+  "footer": {},
+  "homePage": {
+    "introTitle": "THP Steuerkontor: <br /> Gestalten Sie Ihre Expertise. <br /> Sichern Sie Ihre Zukunft.",
+    "aboutUs": {
+      "title": "Über uns",
+      "paragraph1": "Die THP Steuerkontor Steuerberatungsgesellschaft mbH ist eine lokal verwurzelte und überregional tätige Steuerberatungsgesellschaft, die 1994 unter dem Namen ADVISA in Schermbeck gegründet wurde. Unser Hauptsitz in Schermbeck befindet sich seit über 20 Jahren im Gewerbegebiet in Schermbeck.",
+      "paragraph2": "In unserer Kanzlei profitieren unsere Mandanten von mehr als 20 Jahren Erfahrung, die uns hilft, den vielfältigen komplexen Anforderungen gerecht zu werden. Die THP Steuerkontor Steuerberatungsgesellschaft mbH baut auf langfristige Partnerschaften. Sie ist als Dienstleister für gewerbliche und freiberufliche Unternehmen aller Branchen und Rechtsformen sowie Privatpersonen, Vereine und Stiftungen tätig.",
+      "paragraph3": "Mit allem, was wir an Wissen, Können und Engagement zu bieten haben, bieten wir Ihnen eine umfassende Gestaltungsberatung in allen steuerrechtlichen und betriebswirtschaftlichen Fragen zu angemessenen Honoraren. Individuelle Lösungen und das Ziel, für jeden Kunden etwas Besonderes zu tun, prägen unsere Geschäftsphilosophie.",
+      "learnMore": "Mehr erfahren"
+    },
+    "servicesTitle": "Unsere Dienstleistungen"
+  },
+  "services": {
+    "tax": {
+      "title": "Individuelle Steuerlösungen für maximale gesetzliche Einsparungen",
+      "content": [
+        [
+          "Erstellung von Einkommensteuer-, Körperschaftsteuer-, Gewerbesteuer- und Umsatzsteuererklärungen",
+          "Beratung Land- und Forstwirtschaft"
+        ],
+        ["Übernahme von Verhandlungen mit dem Finanzamt", "Einsprüche"],
+        ["Einholung verbindlicher Auskünfte"],
+        [
+          "Beratung in allen Steuerfragen",
+          "Unterstützung und Begleitung bei Steuerfahndungs und Steuerstrafverfahren"
+        ],
+        [
+          "Kontrolle von Steuerbescheiden",
+          "Unterstützung und Beratung bei Betriebsprüfungen"
+        ],
+        ["Steuerliche Umstrukturierung", "Unternehmensnachfolge"]
+      ]
+    },
+    "accounting": {
+      "title": "Buchhaltung",
+      "content": [
+        [
+          "Sonderbuchhaltung für Land- und Forstwirtschaft, Autohäuser, Handwerker und Gesundheitsberufe"
+        ],
+        [
+          "Erstellung und fristgerechte Abgabe von Umsatzsteuervoranmeldungen und zusammenfassenden Meldungen"
+        ],
+        [],
+        [
+          "Einrichtung und Führung der Finanzbuchhaltung einschließlich Anlagenbuchhaltung"
+        ],
+        [
+          "Monatliche betriebswirtschaftliche Auswertungen und betriebswirtschaftliche Analysen"
+        ]
+      ]
+    },
+    "audit": {
+      "title": "Audit",
+      "content": [
+        [
+          "Unterstützung und Begleitung bei Steuerermittlungen und Selbstanzeigen"
+        ],
+        [],
+        [],
+        ["Übernahme von Verhandlungen mit dem Finanzamt"],
+        ["Unterstützung und Beratung bei Betriebsprüfungen"]
+      ]
+    },
+    "consulting": {
+      "title": "Unternehmensberatung",
+      "content": [
+        [
+          "Beratung bei Unternehmenskäufen oder -verkäufen sowie bei allen Arten von Unternehmensumstrukturierungen"
+        ],
+        [
+          "AdviBeratung in allen finanziellen und betriebswirtschaftlichen Fragence on all financial and business issues"
+        ],
+        [],
+        ["Erstellung von Planbilanzen und Plangewinnrechnungens"],
+        ["Durchführung von Unternehmensbewertungen"],
+        [
+          "Betriebswirtschaftliche Analysen der Vermögens-, Finanz- und Ertragslage"
+        ]
+      ]
+    },
+    "payroll": {
+      "title": "Lohnbuchhaltung",
+      "content": [
+        ["Erstellung der Lohnbuchhaltung"],
+        ["Arbeitskostenoptimierung nettomaxx"],
+        [],
+        [
+          "Rechtsberatung in Zusammenarbeit mit der Kanzlei Friedrich, Westhues-Wedig & Coll."
+        ],
+        ["Internationale Entsendung von Arbeitnehmern"]
+      ]
+    }
+  }
 }
