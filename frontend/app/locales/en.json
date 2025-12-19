@@ -20,8 +20,27 @@
     "news": "News"
   },
   "footer": {},
+  "meta": {
+    "home": {
+      "title": "Home",
+      "description": "THP"
+    }
+  },
+  "errorBoundary": {
+    "oopsTitle": "Oops!",
+    "unexpected": "An unexpected error occurred.",
+    "notFoundTitle": "404",
+    "errorTitle": "Error",
+    "notFoundDetails": "The requested page could not be found."
+  },
   "homePage": {
     "introTitle": "THP Steuerkontor: <br /> Shape Your Expertise.<br /> Secure Your Future.",
+    "introImgs": {
+      "alt1": "THP Steuerkontor intro 1",
+      "alt2": "THP Steuerkontor intro 2",
+      "alt3": "THP Steuerkontor intro 3",
+      "alt4": "THP Steuerkontor intro 4"
+    },
     "aboutUs": {
       "title": "About Us",
       "paragraph1": "THP Steuerkontor Steuerberatungsgesellschaft mbH is a locally rooted and nationally active tax consulting company, which was founded in 1994 under the name ADVISA in Schermbeck. Our head office in Schermbeck has been located since over 20 years in the industrial park in Schermbeck.",
@@ -29,7 +48,49 @@
       "paragraph3": "With everything we have to offer in terms of knowledge, skills and commitment, we offer you comprehensive structuring advice in all tax law and business management issues at reasonable fees. Individual solutions and the goal of doing something special for each client characterize our business philosophy.",
       "learnMore": "Learn More"
     },
-    "servicesTitle": "Our Services"
+    "servicesTitle": "Our Services",
+    "form": {
+      "title": "Contact us"
+    }
+  },
+  "form": {
+    "imageAlt": "People",
+    "placeholders": {
+      "name": "Name",
+      "phone": "+49 (999) 999-99-99",
+      "email": "E-mail",
+      "message": "Message"
+    },
+    "buttons": {
+      "send": "Send",
+      "sending": "Sending..."
+    },
+    "privacy": "By clicking the submit button, you agree to our privacy policy and personal data processing",
+    "errors": {
+      "nameMin": "Name must be at least 2 characters",
+      "emailInvalid": "Invalid email address",
+      "messageMin": "Message must be at least 2 characters"
+    },
+    "notifications": {
+      "validationError": {
+        "title": "Validation Error",
+        "text": "Please fill in all fields correctly"
+      },
+      "success": {
+        "title": "Success!",
+        "text": "Your message has been sent successfully"
+      },
+      "error": {
+        "title": "Error",
+        "failedToSend": "Failed to send message",
+        "generic": "An error occurred while sending the message. Please try again later."
+      }
+    }
+  },
+  "notify": {
+    "icons": {
+      "warningTitle": "Warning"
+    }
   },
   "services": {
     "tax": {

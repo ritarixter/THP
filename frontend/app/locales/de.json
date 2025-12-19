@@ -20,6 +20,19 @@
     "news": "Nachrichten"
   },
   "footer": {},
+  "meta": {
+    "home": {
+      "title": "Startseite",
+      "description": "THP"
+    }
+  },
+  "errorBoundary": {
+    "oopsTitle": "Ups!",
+    "unexpected": "Ein unerwarteter Fehler ist aufgetreten.",
+    "notFoundTitle": "404",
+    "errorTitle": "Fehler",
+    "notFoundDetails": "Die angeforderte Seite konnte nicht gefunden werden."
+  },
   "homePage": {
     "introTitle": "THP Steuerkontor: <br /> Gestalten Sie Ihre Expertise. <br /> Sichern Sie Ihre Zukunft.",
     "aboutUs": {
@@ -29,7 +42,49 @@
       "paragraph3": "Mit allem, was wir an Wissen, Können und Engagement zu bieten haben, bieten wir Ihnen eine umfassende Gestaltungsberatung in allen steuerrechtlichen und betriebswirtschaftlichen Fragen zu angemessenen Honoraren. Individuelle Lösungen und das Ziel, für jeden Kunden etwas Besonderes zu tun, prägen unsere Geschäftsphilosophie.",
       "learnMore": "Mehr erfahren"
     },
-    "servicesTitle": "Unsere Dienstleistungen"
+    "servicesTitle": "Unsere Dienstleistungen",
+    "form": {
+      "title": "Kontaktieren Sie uns"
+    }
+  },
+  "form": {
+    "imageAlt": "Menschen",
+    "placeholders": {
+      "name": "Name",
+      "phone": "+49 (999) 999-99-99",
+      "email": "E-mail",
+      "message": "Nachricht"
+    },
+    "buttons": {
+      "send": "Senden",
+      "sending": "Wird gesendet..."
+    },
+    "privacy": "Durch Klicken auf die Schaltfläche Senden stimmen Sie unseren Datenschutzbestimmungen und der Verarbeitung personenbezogener Daten zu",
+    "errors": {
+      "nameMin": "Name muss mindestens 2 Zeichen lang sein",
+      "emailInvalid": "Ungültige E-Mail-Adresse",
+      "messageMin": "Nachricht muss mindestens 2 Zeichen lang sein"
+    },
+    "notifications": {
+      "validationError": {
+        "title": "Validierungsfehler",
+        "text": "Bitte füllen Sie alle Felder korrekt aus"
+      },
+      "success": {
+        "title": "Erfolg!",
+        "text": "Ihre Nachricht wurde erfolgreich gesendet"
+      },
+      "error": {
+        "title": "Fehler",
+        "failedToSend": "Nachricht konnte nicht gesendet werden",
+        "generic": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+      }
+    }
+  },
+  "notify": {
+    "icons": {
+      "warningTitle": "Warnung"
+    }
   },
   "services": {
     "tax": {

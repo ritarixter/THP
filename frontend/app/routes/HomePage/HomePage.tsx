@@ -8,8 +8,13 @@ import learnMore from "../../images/icons/learn-more.svg";
 import { useState } from "react";
 import Services from "~/components/Service/Service";
 import { useTranslation } from "react-i18next";
+import Form from "~/components/Form/Form";
+import i18n from "~/i18n";
 export function meta({}: Route.MetaArgs) {
-  return [{ title: "Home" }, { name: "description", content: "THP" }];
+  return [
+    { title: i18n.t("meta.home.title") },
+    { name: "description", content: i18n.t("meta.home.description") },
+  ];
 }
 
 export default function HomePage() {
@@ -27,10 +32,10 @@ export default function HomePage() {
             />
             <div className={styles.intro__imgs}>
               <div className={styles.intro__empty}></div>
-              <img src={img1} alt="thp steuerkontor intro 1" />
-              <img src={img2} alt="thp steuerkontor intro 2" />
-              <img src={img3} alt="thp steuerkontor intro 3" />
-              <img src={img4} alt="thp steuerkontor intro 4" />
+              <img src={img1} alt={t("homePage.introImgs.alt1")} />
+              <img src={img2} alt={t("homePage.introImgs.alt2")} />
+              <img src={img3} alt={t("homePage.introImgs.alt3")} />
+              <img src={img4} alt={t("homePage.introImgs.alt4")} />
             </div>
           </div>
 
@@ -76,6 +81,11 @@ export default function HomePage() {
         </div>
       </section>
       <Services />
+
+      <section className="wrapper">
+        <h2 className={styles.service__title}>{t("homePage.form.title")}</h2>
+        <Form />
+      </section>
     </div>
   );
 }
