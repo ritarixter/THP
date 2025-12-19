@@ -5,6 +5,7 @@ import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
+import globals from "globals";
 
 export default [
   js.configs.recommended,
@@ -20,19 +21,9 @@ export default [
         },
       },
       globals: {
-        window: "readonly",
-        document: "readonly",
-        navigator: "readonly",
-        console: "readonly",
-        process: "readonly",
-        __dirname: "readonly",
-        module: "readonly",
-        require: "readonly",
-        localStorage: "readonly",
-        URL: "readonly",
-        React: "readonly",
-        setTimeout: "readonly",
-        clearTimeout: "readonly",
+        ...globals.browser,
+        ...globals.es2021,
+        REACT_APP_BACKEND_URL: "readonly",
       },
     },
     plugins: {
@@ -55,6 +46,7 @@ export default [
       "@typescript-eslint/no-explicit-any": "warn",
       "prettier/prettier": "error",
       "no-empty-pattern": "off",
+      "no-undef": "off", // TypeScript handles this
     },
     settings: {
       react: {
