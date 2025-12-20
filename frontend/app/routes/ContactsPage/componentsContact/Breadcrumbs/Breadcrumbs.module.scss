@@ -1,0 +1,72 @@
+@use "../../../../styles/responsive.scss" as *;
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 15px;
+  margin: 0 0 40px 0;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+}
+
+.companyLink {
+  color: #a4a9b1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #575f6c;
+  }
+}
+
+.separator {
+  color: #a4a9b1;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contactsText {
+  color: #575f6c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+@include responsive(tablet) {
+  .breadcrumbs {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+    padding: 16px 0;
+    font-size: 13px;
+  }
+
+  .companyLink,
+  .separator,
+  .contactsText {
+    font-size: 15px;
+  }
+}
+
+@include responsive(phone) {
+  .breadcrumbs {
+    width: 320 !important;
+    height: 15px;
+    margin: 22px 0 25px 0 !important;
+    padding-left: 0 !important;
+    position: relative;
+    left: 0;
+  }
+
+  .companyLink,
+  .separator,
+  .contactsText {
+    font-size: 12px;
+  }
+}
