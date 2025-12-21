@@ -10,10 +10,10 @@
 
 .pageContainer {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding-left: 340px;
-  padding-right: 340px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 
@@ -86,24 +86,24 @@
 
 @include responsive(phone) {
   .contactsPage {
-    width: 100vw !important;
-    max-width: 100% !important;
+    width: 100vw ;
+    max-width: 100% ;
     margin: 0;
     padding: 0;
   }
 
   .pageContainer {
-    width: 360px !important;
-    max-width: 360px !important;
+    width: 360px ;
+    max-width: 360px ;
     margin: 0;
-    padding: 0 20px !important;
+    padding: 0 20px ;
   }
 
   .pageTitle {
-    width: 304px !important;
-    height: 18px !important;
-    font-size: 20px !important;
-    margin: 0 0 32px 0 !important;
-    padding-left: 0 !important;
+    width: 304px ;
+    height: 18px ;
+    font-size: 20px ;
+    margin: 0 0 32px 0 ;
+    padding-left: 0 ;
   }
 }

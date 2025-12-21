@@ -29,9 +29,9 @@ export default function ContactsPage() {
       <Location />
 
       <main className={styles.pageContainer}>
-        <section className={styles.section} aria-labelledby="contact-info">
+      
           <ContactInfo />
-        </section>
+    
 
         <section className={styles.section} aria-labelledby="team-cards">
           <TeamCards />

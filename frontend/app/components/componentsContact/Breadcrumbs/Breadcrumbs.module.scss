@@ -56,10 +56,10 @@
 
 @include responsive(phone) {
   .breadcrumbs {
-    width: 320 !important;
+    width: 320 ;
     height: 15px;
-    margin: 22px 0 25px 0 !important;
-    padding-left: 0 !important;
+    margin: 22px 0 25px 0 ;
+    padding-left: 0 ;
     position: relative;
     left: 0;
   }
