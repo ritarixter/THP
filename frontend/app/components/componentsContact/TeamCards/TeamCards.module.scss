@@ -1,0 +1,320 @@
+@use "../../../../styles/responsive.scss" as *;
+
+.teamCards {
+  margin-bottom: 80px;
+}
+
+.title {
+  width: 237px;
+  height: 37px;
+  color: #333;
+  font-family: "Afacad", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 50px */
+  margin: 0 0 64px 0;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 32px;
+  max-width: calc(604px * 2 + 32px);
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: 335px;
+  background: #fff;
+  overflow: hidden;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 56px 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  border-top: 2px solid #4878fe;
+  border-left: 2px solid #4878fe;
+  border-bottom: 2px solid #4878fe;
+}
+
+.photoContainer {
+  width: 251px;
+  height: 335px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 251 / 335;
+}
+
+.name {
+  color: #1f1f1f;
+  font-family: "Afacad", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+}
+
+.position {
+  color: #666;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 1px 0;
+}
+
+.subtitle {
+  color: #666;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.description {
+  color: #888;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 16px 0 0 0;
+}
+
+@media (max-width: 1200px) and (min-width: 840px) {
+  .teamCards {
+    margin-bottom: 70px;
+  }
+
+  .title {
+    font-size: 38px;
+    margin-bottom: 56px;
+    width: auto;
+    height: auto;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .cardsContainer {
+    display: flex ;
+    flex-direction: column ;
+    gap: 28px;
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .card {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+
+  }
+
+  .content {
+    padding: 56px 20px 0 20px;
+  }
+
+  .photoContainer {
+    width: 251px;
+    height: 300px;
+  }
+
+  .name {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .position,
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+@include responsive(tablet) {
+  .teamCards {
+    margin-bottom: 60px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 48px;
+    width: auto;
+    height: auto;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    max-width: 675px;
+    max-width: 0 auto;
+
+  }
+
+  .content {
+    padding: 40px 32px 0 32px;
+  }
+
+  .photoContainer {
+    width: 251px;
+    height: 300px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .position,
+  .subtitle {
+    font-size: 15px;
+  }
+}
+
+@include responsive(phone) {
+  .teamCards {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .title {
+    width: 100%;
+    height: auto;
+    font-family: "Afacad", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 125%;
+    margin: 32px 0 24px 0;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .card {
+    width: 100% ;
+    height: 225px ;
+    flex-direction: row ;
+    margin: 0 ;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #4878fe;
+  }
+
+  .photoContainer {
+    width: 112px ;
+    height: 150px ;
+    position: absolute;
+    top: 18px ;
+    left: 151px ;
+    right: auto ;
+    bottom: auto ;
+    order: 1;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    width: 243px ;
+    height: 56px ;
+    position: absolute;
+    top: 148px ;
+    left: 20px ;
+    padding: 0 ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px ;
+    border: none ;
+  }
+
+  .name {
+    width: 100%;
+    font-family: "Ubuntu", sans-serif ;
+    font-weight: 500 ;
+    font-style: normal ;
+    font-size: 18px ;
+    line-height: 150% ;
+    letter-spacing: 0% ;
+    color: #1f1f1f;
+    margin: 0 ;
+    padding: 0;
+  }
+
+  .position {
+    width: 100%;
+    font-family: "Ubuntu", sans-serif ;
+    font-weight: 400 ;
+    font-style: normal ;
+    font-size: 14px ;
+    line-height: 150% ;
+    letter-spacing: 0% ;
+    color: #575f6c ;
+    margin: 0 ;
+    padding: 0;
+  }
+
+  .subtitle {
+    width: 100%;
+    font-family: "Ubuntu", sans-serif ;
+    font-weight: 400 ;
+    font-style: normal ;
+    font-size: 14px ;
+    line-height: 150% ;
+    letter-spacing: 0% ;
+    color: #575f6c ;
+    margin: 0 ;
+    padding: 0;
+  }
+
+  .description {
+    display: none;
+  }
+}
