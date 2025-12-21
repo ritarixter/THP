@@ -1,4 +1,4 @@
-@use "../../../../styles/responsive.scss" as *;
+@use "../../../styles/responsive.scss" as *;
 
 .breadcrumbs {
   display: flex;
@@ -56,10 +56,10 @@
 
 @include responsive(phone) {
   .breadcrumbs {
-    width: 320 ;
+    width: 320;
     height: 15px;
-    margin: 22px 0 25px 0 ;
-    padding-left: 0 ;
+    margin: 22px 0 25px 0;
+    padding-left: 0;
     position: relative;
     left: 0;
   }

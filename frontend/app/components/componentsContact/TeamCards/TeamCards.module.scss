@@ -1,4 +1,4 @@
-@use "../../../../styles/responsive.scss" as *;
+@use "../../../styles/responsive.scss" as *;
 
 .teamCards {
   margin-bottom: 80px;
@@ -117,8 +117,8 @@
   }
 
   .cardsContainer {
-    display: flex ;
-    flex-direction: column ;
+    display: flex;
+    flex-direction: column;
     gap: 28px;
     max-width: 100%;
     padding-left: 0;
@@ -128,7 +128,6 @@
     width: 100%;
     height: 300px;
     margin: 0 auto;
-
   }
 
   .content {
@@ -179,7 +178,6 @@
     height: auto;
     max-width: 675px;
     max-width: 0 auto;
-
   }
 
   .content {
@@ -233,23 +231,23 @@
   }
 
   .card {
-    width: 100% ;
-    height: 225px ;
-    flex-direction: row ;
-    margin: 0 ;
+    width: 100%;
+    height: 225px;
+    flex-direction: row;
+    margin: 0;
     position: relative;
     overflow: hidden;
     border: 2px solid #4878fe;
   }
 
   .photoContainer {
-    width: 112px ;
-    height: 150px ;
+    width: 112px;
+    height: 150px;
     position: absolute;
-    top: 18px ;
-    left: 151px ;
-    right: auto ;
-    bottom: auto ;
+    top: 18px;
+    left: 151px;
+    right: auto;
+    bottom: auto;
     order: 1;
     margin: 0;
     flex-shrink: 0;
@@ -262,55 +260,55 @@
   }
 
   .content {
-    width: 243px ;
-    height: 56px ;
+    width: 243px;
+    height: 56px;
     position: absolute;
-    top: 148px ;
-    left: 20px ;
-    padding: 0 ;
+    top: 148px;
+    left: 20px;
+    padding: 0;
 
     display: flex;
     flex-direction: column;
-    gap: 5px ;
-    border: none ;
+    gap: 5px;
+    border: none;
   }
 
   .name {
     width: 100%;
-    font-family: "Ubuntu", sans-serif ;
-    font-weight: 500 ;
-    font-style: normal ;
-    font-size: 18px ;
-    line-height: 150% ;
-    letter-spacing: 0% ;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
     color: #1f1f1f;
-    margin: 0 ;
+    margin: 0;
     padding: 0;
   }
 
   .position {
     width: 100%;
-    font-family: "Ubuntu", sans-serif ;
-    font-weight: 400 ;
-    font-style: normal ;
-    font-size: 14px ;
-    line-height: 150% ;
-    letter-spacing: 0% ;
-    color: #575f6c ;
-    margin: 0 ;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #575f6c;
+    margin: 0;
     padding: 0;
   }
 
   .subtitle {
     width: 100%;
-    font-family: "Ubuntu", sans-serif ;
-    font-weight: 400 ;
-    font-style: normal ;
-    font-size: 14px ;
-    line-height: 150% ;
-    letter-spacing: 0% ;
-    color: #575f6c ;
-    margin: 0 ;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #575f6c;
+    margin: 0;
     padding: 0;
   }
 
