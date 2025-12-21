@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import styles from "./TeamCards.module.scss";
 
-import ninaPhoto from "../../../../images/Nina_Thurn.svg";
-import rizaPhoto from "../../../../images/Riza_Demirel.svg";
-import susannePhoto from "../../../../images/Susanne_Hoth.svg";
+import ninaPhoto from "../../../images/Nina_Thurn.svg";
+import rizaPhoto from "../../../images/Riza_Demirel.svg";
+import susannePhoto from "../../../images/Susanne_Hoth.svg";
 
 interface teamMember {
   id: number;
