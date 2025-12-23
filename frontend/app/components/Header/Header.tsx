@@ -23,32 +23,24 @@ export default function Header() {
     { code: "de", name: "DEU" },
   ];
 
-  // Слушаем изменения языка
   useEffect(() => {
-    const handleLanguageChanged = (lng: string) => {
-      console.log("Язык изменен на:", lng);
-      setCurrentLanguage(lng);
-    };
+    setCurrentLanguage(i18n.language);
+  }, [i18n.language]);
 
-    i18n.on("languageChanged", handleLanguageChanged);
-
-    return () => {
-      i18n.off("languageChanged", handleLanguageChanged);
-    };
-  }, [i18n]);
-
-  const handleLanguageChange = async (
-    e: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    const newLang = e.target.value;
-    console.log("Пытаемся сменить язык на:", newLang);
-
-    try {
-      await i18n.changeLanguage(newLang);
-      console.log("Язык успешно изменен");
-    } catch (error) {
-      console.error("Ошибка при смене языка:", error);
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const langParam = params.get("lang");
+    if (langParam && languages.some((lang) => lang.code === langParam)) {
+      i18n.changeLanguage(langParam);
+      setCurrentLanguage(langParam);
     }
+  }, [location.search]);
+
+  const handleLanguageChange = (e: any) => {
+    const newLang = e.target.value;
+    i18n.changeLanguage(newLang);
+    setCurrentLanguage(newLang);
+    navigate(`?lang=${newLang}`);
   };
 
   const isActive = (path: string) => {
@@ -64,7 +56,9 @@ export default function Header() {
               <Link to="" className={styles.mobile_navLink}>
                 {t("footer.company.title")}
                 <img
-                  className={`${styles.arrow} ${openSubMenu && styles.arrow_active}`}
+                  className={`${styles.arrow} ${
+                    openSubMenu && styles.arrow_active
+                  }`}
                   onClick={() => setOpenSubMenu(!openSubMenu)}
                   src={arrow}
                 />
@@ -143,7 +137,7 @@ export default function Header() {
           <p className={styles.location}>
             <img src={lang} alt="Location" />
             <select
-              value={currentLanguage || "en"}
+              value={currentLanguage}
               onChange={handleLanguageChange}
               className={styles.select}
             >
