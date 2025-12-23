@@ -18,7 +18,10 @@
     "title": {
       "location": "Alte Poststr. 90 46514 Schermbeck",
       "phone": "+ 49 2853 880-0",
-      "lang": "ENG"
+      "lang": "ENG",
+      "number": "Number",
+      "address": "Address",
+      "contact": "Contact Us"
     },
     "home": "Home",
     "contacts": "Contacts",
