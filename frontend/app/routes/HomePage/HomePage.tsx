@@ -22,7 +22,7 @@ export default function HomePage() {
   const [openAboutUs, setOpenAboutUs] = useState(false);
   return (
     <div className={styles.home}>
-      <section className={styles.section}>
+      <section className={styles.section} id="aboutUs">
         <div className={styles.section__number}>01</div>
         <div className={styles.section__content}>
           <div className={styles.intro}>
@@ -72,7 +72,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={styles.section} id="services">
         <div className={styles.section__number}>02</div>
         <div className={styles.section__content}>
           <h2 className={styles.service__title}>
@@ -82,7 +82,7 @@ export default function HomePage() {
       </section>
       <Services />
 
-      <section className="wrapper">
+      <section className="wrapper" id="contacts">
         <h2 className={styles.service__title}>{t("homePage.form.title")}</h2>
         <Form />
       </section>

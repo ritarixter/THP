@@ -15,11 +15,38 @@
     "homeButton": "Zurück zur Startseite"
   },
   "header": {
+    "title": {
+      "location": "Alte Poststr. 90 46514 Schermbeck",
+      "phone": "+ 49 2853 880-0",
+      "lang": "DEU",
+      "number": "Zahl",
+      "address": "Anschrift",
+      "contact": "kontaktieren Sie uns"
+    },
     "home": "Startseite",
     "contacts": "Kontakte",
     "news": "Nachrichten"
   },
-  "footer": {},
+  "footer": {
+    "company": {
+      "title": "Unternehmen",
+      "aboutUs": "Über uns",
+      "service": "Unsere Dienstleistungen",
+      "vacancies": "Stellenangebot"
+    },
+    "contacts": {
+      "title": "Kontakt",
+      "contacts": "Kontakte der Organisation",
+      "team": "Team",
+      "contactUs": "Kontaktieren Sie uns"
+    },
+    "news": { "title": "News", "latest": "Neuigkeiten" },
+    "title": {
+      "location": "Alte Poststr. 90 46514 Schermbeck",
+      "phone": "+ 49 2853 880-0",
+      "email": "info@thp-steuerkontor.de"
+    }
+  },
   "meta": {
     "home": {
       "title": "Startseite",

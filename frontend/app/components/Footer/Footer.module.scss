@@ -1,9 +1,98 @@
 @use "../../styles/responsive.scss" as *;
 
+.footer {
+  background-color: var(--cl-gray-1);
+  padding-bottom: 67px;
+}
+
+.blockInfo {
+  background-color: var(--cl-white);
+  display: flex;
+  flex-direction: row;
+  min-height: 117px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  color: var(--cl-gray-3);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.blockNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 120px 350px;
+  gap: 124px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  &_title {
+    color: var(--cl-black);
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 39px;
+  }
+
+  &_text {
+    color: var(--cl-gray-6);
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+  }
+}
+
+@include responsive(screen) {
+  .blockNav {
+    padding: 50px 250px;
+    gap: 80px;
+  }
+}
 @include responsive(tablet) {
-  // стили для планшета
+  .blockNav {
+    padding: 30px 150px;
+    gap: 50px;
+  }
 }
 
 @include responsive(phone) {
-  // стили для телефона
+  .logo {
+    margin-bottom: 17px;
+  }
+  .footer {
+    padding-bottom: 0;
+  }
+  .blockNav {
+    display: none;
+  }
+  .blockInfo {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 30px 0 39px 20px;
+    border-top: 5px solid var(--cl-green-3);
+  }
+  .info {
+    gap: 5px;
+  }
 }
