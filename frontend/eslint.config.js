@@ -44,7 +44,7 @@ export default [
         { argsIgnorePattern: "^_" },
       ],
       "@typescript-eslint/no-explicit-any": "warn",
-      "prettier/prettier": "error",
+      "prettier/prettier": ["error", { endOfLine: "auto" }],
       "no-empty-pattern": "off",
       "no-undef": "off", // TypeScript handles this
     },

@@ -5,11 +5,18 @@
   padding-bottom: 67px;
 }
 
-.blockInfo {
+.blockInfoContainer {
   background-color: var(--cl-white);
+}
+.blockInfo {
   display: flex;
   flex-direction: row;
   min-height: 117px;
+  padding: 0 20px;
+  gap: 20px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-around;
 }
@@ -26,13 +33,22 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .blockNav {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 120px 350px;
+  padding: 120px 20px;
+  max-width: 1240px;
+  margin: 0 auto;
   gap: 124px;
 }
 
@@ -59,18 +75,26 @@
     font-style: normal;
     font-weight: 400;
     line-height: 35px;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
 @include responsive(screen) {
   .blockNav {
-    padding: 50px 250px;
+    padding: 50px 20px;
     gap: 80px;
+    max-width: 800px;
   }
 }
 @include responsive(tablet) {
   .blockNav {
-    padding: 30px 150px;
+    padding: 30px 20px;
     gap: 50px;
   }
 }

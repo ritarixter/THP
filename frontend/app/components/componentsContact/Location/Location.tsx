@@ -8,10 +8,7 @@ const Location = () => {
   const { t } = useTranslation();
 
   return (
-    <section
-      className={styles.location}
-      aria-label={t("location.ariaLabel", "Office location on map")}
-    >
+    <section className={styles.location} aria-label={t("location.ariaLabel")}>
       <div className={styles.mapContainer}>
         <iframe
           className={styles.map}
@@ -22,8 +19,8 @@ const Location = () => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title={t("location.mapTitle", "Google Maps - Office Location")}
-          onError={() => console.error("Failed to load map")}
+          title={t("location.mapTitle")}
+          onError={() => console.error(t("location.mapLoadError"))}
         />
       </div>
     </section>

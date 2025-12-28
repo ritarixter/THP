@@ -6,16 +6,12 @@ const Breadcrumbs = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className={styles.breadcrumbs} aria-label="Breadcrumbs">
+    <nav className={styles.breadcrumbs} aria-label={t("breadcrumbs.ariaLabel")}>
       <Link to="/" className={styles.companyLink}>
-        {t("breadcrumbs.company", "Company")}
+        {t("breadcrumbs.company")}
       </Link>
-      <span className={styles.separator}>
-        {t("breadcrumbs.separator", ">")}
-      </span>
-      <span className={styles.contactsText}>
-        {t("breadcrumbs.contact", "Contacts")}
-      </span>
+      <span className={styles.separator}>{t("breadcrumbs.separator")}</span>
+      <span className={styles.contactsText}>{t("breadcrumbs.contact")}</span>
     </nav>
   );
 };

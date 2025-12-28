@@ -51,6 +51,51 @@
     "home": {
       "title": "Home",
       "description": "THP"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "description": "Contacts page"
+    }
+  },
+  "common": {
+    "alt": {
+      "logo": "Logo",
+      "location": "Location",
+      "language": "Language",
+      "email": "Email"
+    }
+  },
+  "breadcrumbs": {
+    "ariaLabel": "Breadcrumbs",
+    "company": "Company",
+    "separator": ">",
+    "contact": "Contacts"
+  },
+  "location": {
+    "ariaLabel": "Office location on map",
+    "mapTitle": "Google Maps - Office Location",
+    "mapLoadError": "Failed to load map"
+  },
+  "contactInfo": {
+    "title": "Contacts",
+    "items": {
+      "address": "Alte Poststr. 90 46514 Schembeck",
+      "phone": "+49 2853 880-0",
+      "email": "info@thp-steuerhorizont.de"
+    }
+  },
+  "team": {
+    "title": "Team",
+    "members": {
+      "nina": {
+        "position": "Managing Director, Tax Advisor"
+      },
+      "riza": {
+        "position": "Bachelor of Arts, Tax Advisor"
+      },
+      "susanne": {
+        "position": "Office management"
+      }
     }
   },
   "errorBoundary": {

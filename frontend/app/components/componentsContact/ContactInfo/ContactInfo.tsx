@@ -4,9 +4,21 @@ import styles from "./ContactInfo.module.scss";
 const ContactInfo = () => {
   const { t } = useTranslation();
 
+  const addressText = t("contactInfo.items.address");
+  const phoneText = t("contactInfo.items.phone");
+  const emailText = t("contactInfo.items.email");
+
+  const phoneHref = `tel:${phoneText.replace(/[^\d+]/g, "")}`;
+  const emailHref = `mailto:${emailText}`;
+  const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    addressText
+  )}`;
+
   const contacts = [
     {
       id: 1,
+      type: "address" as const,
+      href: mapsHref,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,10 +43,12 @@ const ContactInfo = () => {
           />
         </svg>
       ),
-      text: "Alte Poststr. 90 46514 Schembeck",
+      text: addressText,
     },
     {
       id: 2,
+      type: "phone" as const,
+      href: phoneHref,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,10 +66,12 @@ const ContactInfo = () => {
           />
         </svg>
       ),
-      text: "+49 2853 880-0",
+      text: phoneText,
     },
     {
       id: 3,
+      type: "email" as const,
+      href: emailHref,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -80,19 +96,26 @@ const ContactInfo = () => {
           />
         </svg>
       ),
-      text: "info@thp-steuerhorizont.de",
+      text: emailText,
     },
   ];
 
   return (
     <section className={styles.contactInfo}>
-      <h2 className={styles.title}>{t("contactInfo.title", "Contacts")}</h2>
+      <h2 className={styles.title}>{t("contactInfo.title")}</h2>
 
       <div className={styles.contactsList}>
         {contacts.map((contact) => (
           <div key={contact.id} className={styles.contactItem}>
             <div className={styles.iconWrapper}>{contact.icon}</div>
-            <p className={styles.text}>{contact.text}</p>
+            <a
+              className={styles.text}
+              href={contact.href}
+              target={contact.type === "address" ? "_blank" : undefined}
+              rel={contact.type === "address" ? "noreferrer" : undefined}
+            >
+              {contact.text}
+            </a>
           </div>
         ))}
       </div>

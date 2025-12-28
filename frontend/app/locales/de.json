@@ -51,6 +51,51 @@
     "home": {
       "title": "Startseite",
       "description": "THP"
+    },
+    "contacts": {
+      "title": "Kontakte",
+      "description": "Kontaktseite"
+    }
+  },
+  "common": {
+    "alt": {
+      "logo": "Logo",
+      "location": "Standort",
+      "language": "Sprache",
+      "email": "E-Mail"
+    }
+  },
+  "breadcrumbs": {
+    "ariaLabel": "Brotkrumen",
+    "company": "Unternehmen",
+    "separator": ">",
+    "contact": "Kontakte"
+  },
+  "location": {
+    "ariaLabel": "Bürostandort auf der Karte",
+    "mapTitle": "Google Maps – Bürostandort",
+    "mapLoadError": "Karte konnte nicht geladen werden"
+  },
+  "contactInfo": {
+    "title": "Kontakt",
+    "items": {
+      "address": "Alte Poststr. 90 46514 Schermbeck",
+      "phone": "+49 2853 880-0",
+      "email": "info@thp-steuerhorizont.de"
+    }
+  },
+  "team": {
+    "title": "Team",
+    "members": {
+      "nina": {
+        "position": "Geschäftsführerin, Steuerberaterin"
+      },
+      "riza": {
+        "position": "Bachelor of Arts, Steuerberater"
+      },
+      "susanne": {
+        "position": "Büromanagement"
+      }
     }
   },
   "errorBoundary": {

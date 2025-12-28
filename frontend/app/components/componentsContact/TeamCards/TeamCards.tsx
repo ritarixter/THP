@@ -21,26 +21,26 @@ const TeamCards = () => {
     {
       id: 1,
       name: "Nina Thurn",
-      position: "Managing Director, Tax Advisor",
+      position: t("team.members.nina.position"),
       photoUrl: ninaPhoto,
     },
     {
       id: 2,
       name: "Riza Demirel",
-      position: "Bachelor of Arts, Tax Advisor",
+      position: t("team.members.riza.position"),
       photoUrl: rizaPhoto,
     },
     {
       id: 3,
       name: "Susanne Hoth",
-      position: "Office management",
+      position: t("team.members.susanne.position"),
       photoUrl: susannePhoto,
     },
   ];
 
   return (
     <section className={styles.TeamCards}>
-      <h2 className={styles.title}>{t("team.title", "Team")}</h2>
+      <h2 className={styles.title}>{t("team.title")}</h2>
 
       <div className={styles.cardsContainer}>
         {teamMembers.map((member) => (
@@ -53,7 +53,7 @@ const TeamCards = () => {
             <div className={styles.photoContainer}>
               <img
                 src={member.photoUrl}
-                alt={`{$member.name} - ${member.position}`}
+                alt={`${member.name} - ${member.position}`}
                 className={styles.photo}
                 loading="lazy"
               />

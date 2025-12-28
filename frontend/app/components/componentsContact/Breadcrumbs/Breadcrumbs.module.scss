@@ -8,6 +8,7 @@
   margin: 0 0 40px 0;
   font-family: "Ubuntu", sans-serif;
   width: 100%;
+  padding-top: 60px;
 }
 
 .companyLink {
@@ -38,12 +39,19 @@
   line-height: 135%;
 }
 
+@include responsive(screen) {
+  .breadcrumbs {
+    padding-top: 40px;
+  }
+}
+
 @include responsive(tablet) {
   .breadcrumbs {
     width: 100%;
     justify-content: flex-start;
     margin-bottom: 32px;
     padding: 16px 0;
+    padding-top: 40px;
     font-size: 13px;
   }
 
@@ -56,12 +64,11 @@
 
 @include responsive(phone) {
   .breadcrumbs {
-    width: 320;
     height: 15px;
     margin: 22px 0 25px 0;
     padding-left: 0;
     position: relative;
-    left: 0;
+    padding-top: 0;
   }
 
   .companyLink,

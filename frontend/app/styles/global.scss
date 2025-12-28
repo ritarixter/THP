@@ -17,11 +17,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Afacad:wght@400;500;600&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: var(--cl-black);
   background-color: var(--cl-white);
   font-size: 16px;
   font-family: Ubuntu, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
