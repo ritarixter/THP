@@ -4,6 +4,7 @@ import logo from "../../images/logo.svg";
 import styles from "./Header.module.scss";
 import { Gamburger } from "./Gamburger";
 import { useEffect, useState, type ChangeEvent } from "react";
+import { useLocalizedPath } from "../../hooks/useLocalizedPath";
 import addres from "../../images/icons/location.svg";
 import email from "../../images/icons/email.svg";
 import lang from "../../images/icons/lang.svg";
@@ -20,6 +21,7 @@ export default function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   const [openSubMenu, setOpenSubMenu] = useState(false);
+  const localizedPath = useLocalizedPath();
 
   const locationText = t("header.title.location");
   const phoneText = t("header.title.phone");
@@ -53,7 +55,7 @@ export default function Header() {
   const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newLang = e.target.value;
     i18n.changeLanguage(newLang);
-    navigate(`?lang=${newLang}`);
+    navigate(`${location.pathname}?lang=${newLang}${location.hash}`);
   };
 
   const isActive = (path: string) => {
@@ -68,7 +70,7 @@ export default function Header() {
             <li
               className={`${styles.mobile_navList_item} ${styles.mobile_navLink} ${openSubMenu && styles.mobile_navList_item_active}`}
             >
-              <Link to="/" onClick={closeMobileMenu}>
+              <Link to={localizedPath("/")} onClick={closeMobileMenu}>
                 {t("footer.company.title")}
               </Link>
 
@@ -97,7 +99,7 @@ export default function Header() {
               <>
                 <li className={`${styles.mobile_navList_i}`}>
                   <Link
-                    to="/#aboutUs"
+                    to={localizedPath("/#aboutUs")}
                     className={styles.navLink}
                     onClick={closeMobileMenu}
                   >
@@ -106,7 +108,7 @@ export default function Header() {
                 </li>
                 <li className={`${styles.mobile_navList_i}`}>
                   <Link
-                    to="/#services"
+                    to={localizedPath("/#services")}
                     className={styles.navLink}
                     onClick={closeMobileMenu}
                   >
@@ -115,7 +117,7 @@ export default function Header() {
                 </li>
                 <li className={`${styles.mobile_navList_i}`}>
                   <Link
-                    to="/#contacts"
+                    to={localizedPath("/#contacts")}
                     className={styles.navLink}
                     onClick={closeMobileMenu}
                   >
@@ -126,7 +128,7 @@ export default function Header() {
             )}
             <li className={styles.mobile_navList_item}>
               <Link
-                to="/contacts"
+                to={localizedPath("/contacts")}
                 className={styles.mobile_navLink}
                 onClick={closeMobileMenu}
               >
@@ -156,7 +158,7 @@ export default function Header() {
           <div
             className={styles.mobile_button}
             onClick={() => {
-              navigate("#contacts");
+              navigate(localizedPath("/#contacts"));
               closeMobileMenu();
             }}
           >
@@ -173,37 +175,39 @@ export default function Header() {
       <div
         className={`${styles.container} ${openMenu ? styles.container_open : ""}`}
       >
-        <div className={styles.button}>
-          <svg
-            width="33"
-            height="32"
-            viewBox="0 0 33 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.04297 1.07812L31.043 30.0781M31.043 1.07812L1.04297 30.0781"
-              stroke="white"
-              strokeWidth="3"
-            />
-          </svg>
-        </div>
-        <div className={styles.button__burger}>
-          <Gamburger open={openMenu} setOpen={setOpenMenu} />
-        </div>
-        <Link to="/">
-          <img src={logo} alt={t("common.alt.logo")} />
-        </Link>
-        <div className={styles.block}>
-          <a
-            className={styles.location}
-            href={mapsHref}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={addres} alt={t("common.alt.location")} />
-            {locationText}
-          </a>
+        <div className={styles.logo__block}>
+          <div className={styles.button}>
+            <svg
+              width="33"
+              height="32"
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.04297 1.07812L31.043 30.0781M31.043 1.07812L1.04297 30.0781"
+                stroke="white"
+                strokeWidth="3"
+              />
+            </svg>
+          </div>
+          <div className={styles.button__burger}>
+            <Gamburger open={openMenu} setOpen={setOpenMenu} />
+          </div>
+          <Link to={localizedPath("/")} className={styles.logo}>
+            <img src={logo} alt={t("common.alt.logo")} />
+          </Link>
+          <div className={styles.block}>
+            <a
+              className={styles.location}
+              href={mapsHref}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={addres} alt={t("common.alt.location")} />
+              {locationText}
+            </a>
+          </div>
         </div>
         <div className={styles.block}>
           <p className={styles.location}>
@@ -232,7 +236,7 @@ export default function Header() {
           <img
             src={email}
             alt={t("common.alt.email")}
-            onClick={() => navigate("#contacts")}
+            onClick={() => navigate(localizedPath("/#contacts"))}
           />
         </div>
       </div>
@@ -240,7 +244,7 @@ export default function Header() {
         <ul className={styles.navList}>
           <li className={`${styles.navList_item}`}>
             <Link
-              to="/"
+              to={localizedPath("/")}
               className={`${styles.navLink} ${isActive("/") && styles.active}`}
             >
               {t("header.home")}
@@ -248,7 +252,7 @@ export default function Header() {
           </li>
           <li className={styles.navList_item}>
             <Link
-              to="/contacts"
+              to={localizedPath("/contacts")}
               className={`${styles.navLink} ${
                 isActive("/contacts") && styles.active
               }`}

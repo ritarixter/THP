@@ -5,6 +5,15 @@ import ServiceItem, {
 } from "../ServiceItem/ServiceItem";
 import { useTranslation } from "react-i18next";
 
+import businessConsulting from "../../images/home/services/businessConsulting.svg";
+import financialAccounting from "../../images/home/services/financialAccounting.svg";
+import financialStatements from "../../images/home/services/financialStatements.svg";
+import payrollAccounting from "../../images/home/services/payrollAccounting.svg";
+import assetTransfer from "../../images/home/services/assetTransfer.svg";
+import businessManagement from "../../images/home/services/businessManagement.svg";
+import legalAdvisory from "../../images/home/services/legalAdvisory.svg";
+import financialServices from "../../images/home/services/financialServices.svg";
+
 type ITab = {
   id: string;
 } & IServiceItemProps;
@@ -15,44 +24,100 @@ export default function Services() {
   const tabs: ITab[] = useMemo(
     () => [
       {
-        id: "tax",
-        label: "§",
-        title: t("services.tax.title"),
-        content: t("services.tax.content", {
+        id: "businessConsulting",
+        label: businessConsulting,
+        title: t("services.businessConsulting.title"),
+        content: t("services.businessConsulting.content", {
           returnObjects: true,
         }) as string[][],
+        subtitle: t("services.businessConsulting.subtitle"),
+        texts: t("services.businessConsulting.texts", {
+          returnObjects: true,
+        }) as { title: string | null; text: string }[],
       },
       {
-        id: "accounting",
-        label: "+/-",
-        title: t("services.accounting.title"),
-        content: t("services.accounting.content", {
+        id: "financialAccounting",
+        label: financialAccounting,
+        title: t("services.financialAccounting.title"),
+        content: t("services.financialAccounting.content", {
           returnObjects: true,
         }) as string[][],
+        subtitle: t("services.financialAccounting.subtitle"),
+        texts: t("services.financialAccounting.texts", {
+          returnObjects: true,
+        }) as { title: string | null; text: string }[],
       },
       {
-        id: "audit",
-        label: "?",
-        title: t("services.audit.title"),
-        content: t("services.audit.content", {
+        id: "financialStatements",
+        label: financialStatements,
+        title: t("services.financialStatements.title"),
+        content: t("services.financialStatements.content", {
           returnObjects: true,
         }) as string[][],
+        subtitle: t("services.financialStatements.subtitle"),
+        texts: t("services.financialStatements.texts", {
+          returnObjects: true,
+        }) as { title: string | null; text: string }[],
       },
       {
-        id: "consulting",
-        label: "!",
-        title: t("services.consulting.title"),
-        content: t("services.consulting.content", {
+        id: "payrollAccounting",
+        label: payrollAccounting,
+        title: t("services.payrollAccounting.title"),
+        content: t("services.payrollAccounting.content", {
           returnObjects: true,
         }) as string[][],
+        subtitle: t("services.payrollAccounting.subtitle"),
+        texts: t("services.payrollAccounting.texts", {
+          returnObjects: true,
+        }) as { title: string | null; text: string }[],
       },
       {
-        id: "payroll",
-        label: "€",
-        title: t("services.payroll.title"),
-        content: t("services.payroll.content", {
+        id: "assetTransfer",
+        label: assetTransfer,
+        title: t("services.assetTransfer.title"),
+        content: t("services.assetTransfer.content", {
           returnObjects: true,
         }) as string[][],
+        subtitle: t("services.assetTransfer.subtitle"),
+        texts: t("services.assetTransfer.texts", {
+          returnObjects: true,
+        }) as { title: string | null; text: string }[],
+      },
+      {
+        id: "businessManagement",
+        label: businessManagement,
+        title: t("services.businessManagement.title"),
+        content: t("services.businessManagement.content", {
+          returnObjects: true,
+        }) as string[][],
+        subtitle: t("services.businessManagement.subtitle"),
+        texts: t("services.businessManagement.texts", {
+          returnObjects: true,
+        }) as { title: string | null; text: string }[],
+      },
+      {
+        id: "legalAdvisory",
+        label: legalAdvisory,
+        title: t("services.legalAdvisory.title"),
+        content: t("services.legalAdvisory.content", {
+          returnObjects: true,
+        }) as string[][],
+        subtitle: t("services.legalAdvisory.subtitle"),
+        texts: t("services.legalAdvisory.texts", {
+          returnObjects: true,
+        }) as { title: string | null; text: string }[],
+      },
+      {
+        id: "financialServices",
+        label: financialServices,
+        title: t("services.financialServices.title"),
+        content: t("services.financialServices.content", {
+          returnObjects: true,
+        }) as string[][],
+        subtitle: t("services.financialServices.subtitle"),
+        texts: t("services.financialServices.texts", {
+          returnObjects: true,
+        }) as { title: string | null; text: string }[],
       },
     ],
     [t]
@@ -89,7 +154,11 @@ export default function Services() {
                 className={`${styles.tabs__button} ${tab.id === selectedTab.id && styles.tabs__button_active}`}
                 onClick={() => handleTabChange(tab)}
               >
-                {tab.label}
+                <img
+                  className={styles.tabs__button_icon}
+                  src={tab.label}
+                  alt={tab.id}
+                />
               </button>
             </li>
           ))}
@@ -99,6 +168,8 @@ export default function Services() {
           label={selectedTab.label}
           title={selectedTab.title}
           content={selectedTab.content}
+          subtitle={selectedTab.subtitle}
+          texts={selectedTab.texts}
         />
       </div>
 
@@ -133,6 +204,8 @@ export default function Services() {
                   label={tab.label}
                   title={tab.title}
                   content={tab.content}
+                  subtitle={tab.subtitle}
+                  texts={tab.texts}
                 />
               )}
             </li>

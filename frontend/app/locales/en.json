@@ -16,7 +16,7 @@
   },
   "header": {
     "title": {
-      "location": "Alte Poststr. 90 46514 Schermbeck",
+      "location": "Düsseldorf, Berlin",
       "phone": "+ 49 2853 880-0",
       "lang": "ENG",
       "number": "Number",
@@ -42,7 +42,8 @@
     },
     "news": { "title": "News", "latest": "Latest news" },
     "title": {
-      "location": "Alte Poststr. 90 46514 Schermbeck",
+      "location": "Düsseldorf, Berlin",
+
       "phone": "+ 49 2853 880-0",
       "email": "info@thp-steuerkontor.de"
     }
@@ -50,7 +51,7 @@
   "meta": {
     "home": {
       "title": "Home",
-      "description": "THP"
+      "description": "Nexora"
     },
     "contacts": {
       "title": "Contacts",
@@ -79,7 +80,8 @@
   "contactInfo": {
     "title": "Contacts",
     "items": {
-      "address": "Alte Poststr. 90 46514 Schembeck",
+      "address1": "Düsseldorf",
+      "address2": "Berlin",
       "phone": "+49 2853 880-0",
       "email": "info@thp-steuerhorizont.de"
     }
@@ -106,19 +108,50 @@
     "notFoundDetails": "The requested page could not be found."
   },
   "homePage": {
-    "introTitle": "THP Steuerkontor: <br /> Shape Your Expertise.<br /> Secure Your Future.",
+    "introTitle": "Your Business Advisory Firm <br/> Personal. Competent.<br/> Future-oriented.",
     "introImgs": {
-      "alt1": "THP Steuerkontor intro 1",
+      "alt1": "Nexora Steuerkontor intro 1",
       "alt2": "THP Steuerkontor intro 2",
       "alt3": "THP Steuerkontor intro 3",
       "alt4": "THP Steuerkontor intro 4"
     },
     "aboutUs": {
       "title": "About Us",
-      "paragraph1": "THP Steuerkontor Steuerberatungsgesellschaft mbH is a locally rooted and nationally active tax consulting company, which was founded in 1994 under the name ADVISA in Schermbeck. Our head office in Schermbeck has been located since over 20 years in the industrial park in Schermbeck.",
-      "paragraph2": "In our firm, our clients benefit from more than 20 years of experience, which helps us to meet the diverse complex requirements. THP Steuerkontor Steuerberatungsgesellschaft mbH builds on long-term partnerships. It is active as a service provider for commercial and freelance companies of all industries and legal forms as well as private individuals, associations and foundations.",
-      "paragraph3": "With everything we have to offer in terms of knowledge, skills and commitment, we offer you comprehensive structuring advice in all tax law and business management issues at reasonable fees. Individual solutions and the goal of doing something special for each client characterize our business philosophy.",
-      "learnMore": "Learn More"
+      "paragraphs": [
+        {
+          "title": null,
+          "text": "We are a modern business advisory firm with two locations, providing comprehensive tax and business consulting services from a single source. Our focus is on the individual support of small and medium-sized enterprises as well as private clients. We combine professional expertise with personal proximity and clear communication."
+        },
+        {
+          "title": "Advisory with Perspective and Personal Attention",
+          "text": "As a firm of manageable size, we place great value on a trusting and long-term partnership. We advise you on tax, business, and organizational matters – from business start-ups and ongoing consulting to optimization and succession planning.Your personal advisor understands your situation, thinks ahead, and works with you to develop tailored solutions."
+        },
+        {
+          "title": "Digital Solutions That Simplify",
+          "text": "We rely on modern, digital workflows to make your day-to-day business easier. Secure online portals allow documents to be exchanged, archived, and accessed at any time. This gives you transparency over your figures and more time to focus on your core business."
+        },
+        {
+          "title": "Expertise That Stays Up to Date",
+          "text": "We ensure a high standard of advisory quality through continuous professional training and development. As tax law and business conditions change constantly, we stay up to date and apply this knowledge specifically for your benefit."
+        },
+        {
+          "title": "Our Commitment",
+          "text": "We stand for quality, reliability, and advisory services at eye level. Our goal is to be a dependable partner for you – professionally and personally, today and in the future."
+        },
+        {
+          "title": "Our Mission",
+          "text": "We use digital tools and sound expertise to provide our clients with clear, practical, and understandable solutions. We think ahead and support you in making well-informed decisions."
+        },
+        {
+          "title": "Our Vision",
+          "text": "We aim to be perceived as a modern, personal business advisory firm that supports its clients over the long term and successfully guides them through tax, economic, and digital change."
+        },
+        {
+          "title": "Our Locations",
+          "text": "We are available to you at two locations: Düsseldorf and Berlin"
+        }
+      ],
+      "learnMore": "Learn more"
     },
     "servicesTitle": "Our Services",
     "form": {
@@ -165,78 +198,254 @@
     }
   },
   "services": {
-    "tax": {
-      "title": "Tailored Tax Solutions for Maximum Legal Savings",
+    "businessConsulting": {
+      "title": "Business Start-Up Consulting",
+      "subtitle": "Our Support for Your Start-Up",
+      "texts": [
+        {
+          "title": null,
+          "text": "Starting your own business offers many opportunities, but also raises numerous questions. Decisions regarding legal form, financing, pricing, and organization have a long-term impact on your success. As there is rarely only one \u201Cright\u201D solution, careful planning tailored to your personal situation and goals is essential."
+        },
+        {
+          "title": null,
+          "text": "A good business idea and entrepreneurial spirit are important foundations. Equally important, however, is thorough preparation. Those who plan early and seek professional advice avoid costly mistakes and create a solid basis for a successful start."
+        },
+        {
+          "title": "Your Benefit",
+          "text": "Professional start-up consulting is an investment that pays off both strategically and financially. We help you make sound decisions, minimize risks, and build your business on a solid foundation from the very beginning."
+        }
+      ],
       "content": [
         [
-          "Preparation of income tax, corporation tax, trade tax and sales tax returns",
-          "Consulting Agricultural and Forestry"
+          "Preparation of business plans, profitability, and liquidity calculations",
+          "Financial planning and support in bank and funding discussions"
         ],
-        ["Taking over negotiations with the tax office", "Appeals"],
-        ["Obtaining binding information"],
+        ["Advice on grants and public funding programs"],
         [
-          "Advice on all tax issues",
-          "Support and encouragement in tax investigations and proceedings"
-        ],
-        ["Control of tax assessments", "Support and advice during tax audits"],
-        ["Tax restructuring", "Company succession"]
-      ]
-    },
-    "accounting": {
-      "title": "Accounting",
-      "content": [
-        [
-          "Special accounting for agriculture and forestry, car dealerships, craftsmen and health professions"
+          "Clarification of VAT-related matters",
+          "Introduction and setup of financial accounting"
         ],
         [
-          "Preparation and timely submission of advance VAT returns and recapitulative reports"
+          "Support with pricing, costing, and office organization",
+          "Advice on personnel planning"
         ],
-        [],
+        ["Preparation of start-up assessments"],
         [
-          "Establishment and management of financial accounting including asset accounting"
-        ],
-        ["Monthly business evaluations and business analyses"]
-      ]
-    },
-    "audit": {
-      "title": "Audit",
-      "content": [
-        [
-          "Support and accompaniment in tax investigations and voluntary disclosures"
-        ],
-        [],
-        [],
-        ["Taking over negotiations with the tax office"],
-        ["Support and advice during tax audits"]
-      ]
-    },
-    "consulting": {
-      "title": "Management Consulting",
-      "content": [
-        [
-          "Advice on acquisitions or sales of companies as well as on all types of corporate restructuring"
-        ],
-        ["Advice on all financial and business issues"],
-        [],
-        [
-          "Preparation of planned balance sheets and planned profit and loss calculations"
-        ],
-        ["Carrying out company valuations"],
-        [
-          "Business analyses of the net assets, financial position and results of operations"
+          "Evaluation of market and success prospects",
+          "Selection of the most suitable legal form from a tax and business perspective"
         ]
       ]
     },
-    "payroll": {
-      "title": "Payroll Accounting",
+
+    "financialAccounting": {
+      "title": "Financial Accounting",
+      "subtitle": "Our Financial Accounting Services",
+      "texts": [
+        {
+          "title": null,
+          "text": "We take care of your financial accounting so that you can fully concentrate on your daily business. Proper and meaningful accounting forms the basis for sound business decisions. It is therefore essential that all business transactions are recorded correctly, accurately, and transparently."
+        },
+        {
+          "title": null,
+          "text": "We advise you comprehensively on all accounting-related matters and support you in establishing a clearly structured and transparent accounting system \u2013 whether you handle your accounting in-house or outsource it entirely to us."
+        },
+        {
+          "title": "Digital, Efficient, and Insightful",
+          "text": "Our work is based on modern digital software solutions that ensure secure and efficient data processing, always in compliance with legal requirements for digital bookkeeping."
+        },
+        {
+          "title": null,
+          "text": "Regular management reports provide meaningful key figures and transparency regarding your company\u2019s economic development. Deviations can be identified early and corrective measures taken in good time."
+        }
+      ],
       "content": [
-        ["Preparation of payroll accounting"],
-        ["Labour cost optimisation nettomaxx"],
+        [
+          "Setup and ongoing management of financial accounting, including fixed assets accounting"
+        ],
+        [
+          "Industry-specific accounting solutions, e.g. for trades, car dealerships, and medical professions"
+        ],
+        ["Cost center and cost type analyses"],
+        ["Monthly management reports and individual business analyses"],
         [],
         [
-          "Legal advice in cooperation with the law firm Friedrich, Westhues-Wedig & Coll."
+          "Preparation and timely submission of VAT advance returns and recapitulative statements"
+        ]
+      ]
+    },
+
+    "financialStatements": {
+      "title": "Financial Statements and Tax Returns",
+      "subtitle": "Our Services in Financial Statements and Tax Returns",
+      "texts": [
+        {
+          "title": null,
+          "text": "Why deal with complex and time-consuming obligations when you can focus on your core business? Preparing annual financial statements and tax returns requires not only expertise, but also secure handling of powerful IT systems, coordinated workflows, and multiple control steps."
+        },
+        {
+          "title": null,
+          "text": "We take care of these tasks for you \u2013 reliably, structured, and on time. The result is a professionally prepared set of annual financial statements along with the corresponding tax returns. During a personal annual review meeting, we explain the results clearly and provide you with well-presented documentation. This forms a solid basis for discussions with banks, authorities, and other business partners."
+        },
+        {
+          "title": "Security and Relief",
+          "text": "To ensure that you can focus on what matters most and feel secure in tax and legal matters, we prepare annual financial statements in accordance with commercial and tax law. We also handle all business-related tax returns as well as special statements and analyses. Private tax returns are also part of our service portfolio."
+        }
+      ],
+      "content": [
+        [
+          "Preparation of annual financial statements under commercial and tax law",
+          "Preparation of income surplus statements"
         ],
-        ["International posting of workers"]
+        ["Preparation of VAT returns", "Preparation of trade tax returns"],
+        [],
+        [
+          "Interim financial statements, provisional credit statements, and liquidation statements"
+        ],
+        ["Private tax returns, e.g. income tax and inheritance tax returns"],
+        ["Preparation of corporate income tax returns", "Profit determinations"]
+      ]
+    },
+
+    "payrollAccounting": {
+      "title": "Payroll Accounting",
+      "subtitle": "Our Services at a Glance",
+      "texts": [
+        {
+          "title": null,
+          "text": "We handle your payroll and salary accounting competently, on time, and in full compliance with the law. Outsourcing this sensitive area saves time and costs, reduces administrative effort, and provides security through support from experienced specialists."
+        },
+        {
+          "title": "Simple, Flexible, and Efficient",
+          "text": "Switching to us is straightforward: you submit all relevant payroll documents once. Thereafter, you only need to inform us of changes such as new hires, departures, salary adjustments, or absences. We take care of everything else. Upon request, we will prepare a non-binding cost comparison between your current internal payroll processing and outsourcing it to our firm. This allows you to quickly identify potential savings and optimization opportunities in your HR management."
+        },
+
+        {
+          "title": "More Than Payroll",
+          "text": "In addition to payroll processing, you benefit from our holistic advisory approach. We always keep tax, legal, and business aspects in mind and support you with personnel-related issues beyond payroll."
+        }
+      ],
+      "content": [
+        ["Ongoing payroll and salary accounting"],
+        ["Preparation of all required notifications and certificates"],
+        [],
+        ["Support with international matters, e.g. employee secondments"],
+        ["Cooperation with specialized attorneys for labor law matters"],
+        [
+          "Payroll cost optimization and advice on tax-efficient structuring options"
+        ]
+      ]
+    },
+
+    "assetTransfer": {
+      "title": "Asset Transfer / Succession",
+      "subtitle": "Our Services in Succession and Asset Planning",
+      "texts": [
+        {
+          "title": null,
+          "text": "Thoughtful asset and succession planning creates security \u2013 for you, your family, and your business. We act as your independent and trusted advisor, supporting you in evaluating investments and in the long-term, tax-optimized structuring of your assets. Based on your personal income and asset situation, we develop individual strategies that take into account both tax optimization opportunities and your personal objectives. Early planning of asset transfers can lead to significant tax savings and help prevent future conflicts."
+        },
+
+        {
+          "title": "Reliable Support",
+          "text": "Loyalty, experience, and professional expertise form the foundation of our advisory services. Together, we develop solutions tailored to your life situation, providing guidance and security for you and the next generation."
+        },
+        {
+          "title": "Legal Notice",
+          "text": "Financial services are provided in cooperation with a wealth advisory and asset management company belonging to the corporate group and regulated by FINMA. Nexora itself does not provide financial services."
+        }
+      ],
+      "content": [
+        [
+          "Tax-optimized allocation and structuring of assets",
+          "Review of wills, inheritance contracts, and gifts with regard to tax implications"
+        ],
+        ["Structuring advice for property transfers and gifts"],
+        ["Preparation of inheritance and gift tax returns"],
+        ["Early planning of private and business succession"],
+        ["Development of tax concepts for anticipated succession"],
+        ["Entrepreneurial succession planning from a tax perspective"]
+      ]
+    },
+
+    "businessManagement": {
+      "title": "Business and Management Consulting",
+      "subtitle": "Our Business Consulting Services",
+      "texts": [
+        {
+          "title": null,
+          "text": "For your company to remain successful in the long term, clear figures and forward-looking decisions are essential. Increasing competitive pressure, growing complexity, and tighter markets require business planning that identifies opportunities and risks at an early stage. We support you with professional business consulting throughout all phases of your company\u2019s development \u2013 from start-up and growth to expansion and succession. We place great value on understandable analyses, realistic planning, and practical recommendations."
+        },
+
+        {
+          "title": "Planning Security Through Clear Analyses",
+          "text": "Long-term business and liquidity planning, as well as comparisons of various financing options, create transparency and security. Whether purchase, leasing, loans, factoring, or alternative financing models \u2013 we help you select the solution best suited to your business. Cost-benefit analyses and the review of potential funding measures complement our advisory services. We also advise you on minimum turnover and profit requirements, both business and private, as well as on retirement planning and asset accumulation \u2013 always tailored to your personal situation."
+        }
+      ],
+      "content": [
+        [
+          "Advice on business development, e.g. start-up and growth phases",
+          "Preparation of business development forecasts (profit, capital, and liquidity planning)"
+        ],
+        ["Conducting cost-benefit analyses"],
+        ["Preparation of meaningful financial and business analyses"],
+        [
+          "Advice on public funding and support programs",
+          "Calculation of minimum business and private turnover and profit requirements"
+        ],
+        ["Advice on retirement planning and asset accumulation"],
+        [
+          "Comparison and evaluation of financing alternatives (purchase, leasing, loans, factoring, mezzanine financing, etc.)"
+        ]
+      ]
+    },
+
+    "legalAdvisory": {
+      "title": "Legal Advisory Support Through Partner Attorneys",
+      "subtitle": "Your Advantages",
+      "texts": [
+        {
+          "title": null,
+          "text": "Legal matters are often closely linked to tax and business decisions. To ensure that you are also well advised in legal matters, we work closely with experienced partner attorneys when required. Through our established network, we connect you with the right legal expert and coordinate the interaction between tax and legal advice. This ensures well-founded, practical solutions that integrate legal, tax, and business aspects efficiently and transparently."
+        },
+
+        {
+          "title": null,
+          "text": "Whether contract drafting, corporate law issues, labor law matters, or succession planning \u2013 we ensure that you receive competent and reliable legal support when needed."
+        }
+      ],
+      "content": [
+        [
+          "Access to qualified partner attorneys from various legal disciplines"
+        ],
+        ["Close coordination between legal and tax advisory services"],
+        [],
+        ["Clear communication and short decision-making paths"],
+        ["Holistic consideration of your issues"],
+        []
+      ]
+    },
+
+    "financialServices": {
+      "title": "Financial Services (Regulated)",
+      "subtitle": "Your Benefit",
+      "texts": [
+        {
+          "title": null,
+          "text": "In addition to our tax and business consulting services, we provide access to professional financial services. These are offered through a wealth advisory and asset management company belonging to the corporate group and regulated by the Swiss financial supervisory authority. This allows for a holistic view of your financial situation. Tax, business, and asset-related matters can be meaningfully aligned \u2013 transparently, in a structured manner, and in compliance with high regulatory standards."
+        },
+
+        {
+          "title": null,
+          "text": "Our goal is to support you reliably in financial matters as well and to develop sustainable, long-term solutions."
+        }
+      ],
+      "content": [
+        ["Access to regulated wealth advisory and asset management services"],
+        ["Holistic alignment of tax, asset, and financial topics"],
+        [],
+        ["Coordinated advisory services from a single source"],
+        ["Clear structures and high regulatory security"],
+        []
       ]
     }
   }

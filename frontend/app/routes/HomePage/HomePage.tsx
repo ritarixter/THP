@@ -44,29 +44,53 @@ export default function HomePage() {
               <h2 className={styles.h2}>{t("homePage.aboutUs.title")}</h2>
 
               <div className={styles.aboutUs__content}>
-                <p className={styles.aboutUs__text}>
-                  {t("homePage.aboutUs.paragraph1")}
-                </p>
-
-                <p className={styles.aboutUs__text}>
-                  {t("homePage.aboutUs.paragraph2")}
-                </p>
+                {(
+                  t("homePage.aboutUs.paragraphs", {
+                    returnObjects: true,
+                  }) as Array<{ title: string | null; text: string }>
+                )
+                  .slice(0, 2)
+                  .map((item, index) => (
+                    <div key={index}>
+                      {item.title && (
+                        <h3 className={styles.aboutUs__subtitle}>
+                          {item.title}
+                        </h3>
+                      )}
+                      <p className={styles.aboutUs__text}>{item.text}</p>
+                    </div>
+                  ))}
+                {!openAboutUs && (
+                  <button
+                    type="button"
+                    className={styles.learnMore}
+                    onClick={() => setOpenAboutUs(!openAboutUs)}
+                  >
+                    {t("homePage.aboutUs.learnMore")}
+                    <img
+                      src={learnMore}
+                      alt={t("homePage.aboutUs.learnMore")}
+                    />
+                  </button>
+                )}
+                {openAboutUs &&
+                  (
+                    t("homePage.aboutUs.paragraphs", {
+                      returnObjects: true,
+                    }) as Array<{ title: string | null; text: string }>
+                  )
+                    .slice(2)
+                    .map((item, index) => (
+                      <div key={index}>
+                        {item.title && (
+                          <h3 className={styles.aboutUs__subtitle}>
+                            {item.title}
+                          </h3>
+                        )}
+                        <p className={styles.aboutUs__text}>{item.text}</p>
+                      </div>
+                    ))}
               </div>
-              {!openAboutUs && (
-                <button
-                  type="button"
-                  className={styles.learnMore}
-                  onClick={() => setOpenAboutUs(!openAboutUs)}
-                >
-                  {t("homePage.aboutUs.learnMore")}
-                  <img src={learnMore} alt={t("homePage.aboutUs.learnMore")} />
-                </button>
-              )}
-              {openAboutUs && (
-                <p className={styles.aboutUs__text}>
-                  {t("homePage.aboutUs.paragraph3")}
-                </p>
-              )}
             </div>
           </div>
         </div>

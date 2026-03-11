@@ -16,7 +16,7 @@
   },
   "header": {
     "title": {
-      "location": "Alte Poststr. 90 46514 Schermbeck",
+      "location": "Düsseldorf, Berlin",
       "phone": "+ 49 2853 880-0",
       "lang": "DEU",
       "number": "Zahl",
@@ -42,7 +42,7 @@
     },
     "news": { "title": "News", "latest": "Neuigkeiten" },
     "title": {
-      "location": "Alte Poststr. 90 46514 Schermbeck",
+      "location": "Düsseldorf, Berlin",
       "phone": "+ 49 2853 880-0",
       "email": "info@thp-steuerkontor.de"
     }
@@ -50,7 +50,7 @@
   "meta": {
     "home": {
       "title": "Startseite",
-      "description": "THP"
+      "description": "Nexora"
     },
     "contacts": {
       "title": "Kontakte",
@@ -79,7 +79,8 @@
   "contactInfo": {
     "title": "Kontakt",
     "items": {
-      "address": "Alte Poststr. 90 46514 Schermbeck",
+      "address1": "Düsseldorf",
+      "address2": "Berlin",
       "phone": "+49 2853 880-0",
       "email": "info@thp-steuerhorizont.de"
     }
@@ -106,12 +107,43 @@
     "notFoundDetails": "Die angeforderte Seite konnte nicht gefunden werden."
   },
   "homePage": {
-    "introTitle": "THP Steuerkontor: <br /> Gestalten Sie Ihre Expertise. <br /> Sichern Sie Ihre Zukunft.",
+    "introTitle": "Ihre Wirtschaftskanzlei<br/>Persönlich. Kompetent.<br/> Zukunftsorientiert.",
     "aboutUs": {
       "title": "Über uns",
-      "paragraph1": "Die THP Steuerkontor Steuerberatungsgesellschaft mbH ist eine lokal verwurzelte und überregional tätige Steuerberatungsgesellschaft, die 1994 unter dem Namen ADVISA in Schermbeck gegründet wurde. Unser Hauptsitz in Schermbeck befindet sich seit über 20 Jahren im Gewerbegebiet in Schermbeck.",
-      "paragraph2": "In unserer Kanzlei profitieren unsere Mandanten von mehr als 20 Jahren Erfahrung, die uns hilft, den vielfältigen komplexen Anforderungen gerecht zu werden. Die THP Steuerkontor Steuerberatungsgesellschaft mbH baut auf langfristige Partnerschaften. Sie ist als Dienstleister für gewerbliche und freiberufliche Unternehmen aller Branchen und Rechtsformen sowie Privatpersonen, Vereine und Stiftungen tätig.",
-      "paragraph3": "Mit allem, was wir an Wissen, Können und Engagement zu bieten haben, bieten wir Ihnen eine umfassende Gestaltungsberatung in allen steuerrechtlichen und betriebswirtschaftlichen Fragen zu angemessenen Honoraren. Individuelle Lösungen und das Ziel, für jeden Kunden etwas Besonderes zu tun, prägen unsere Geschäftsphilosophie.",
+      "paragraphs": [
+        {
+          "title": null,
+          "text": "Wir sind eine moderne Wirtschaftskanzlei mit zwei Standorten und bieten unseren Mandanten umfassende Steuer- und Unternehmensberatung aus einer Hand. Unser Fokus liegt auf der individuellen Betreuung kleiner und mittelständischer Unternehmen sowie von Privatpersonen. Dabei verbinden wir fachliche Kompetenz mit persönlicher Nähe und klarer Kommunikation."
+        },
+        {
+          "title": "Beratung mit Überblick und Nähe",
+          "text": "Als Kanzlei mit überschaubarer Größe legen wir besonderen Wert auf eine vertrauensvolle und langfristige Zusammenarbeit. Wir beraten Sie in steuerlichen, wirtschaftlichen und organisatorischen Fragestellungen – von der Unternehmensgründung über die laufende Beratung und Optimierung bis hin zur Nachfolgeplanung. Ihr persönlicher Ansprechpartner kennt Ihre Situation, denkt mit und entwickelt gemeinsam mit Ihnen passgenaue Lösungen."
+        },
+        {
+          "title": "Digitale Lösungen, die entlasten",
+          "text": "Wir setzen auf zeitgemäße, digitale Arbeitsprozesse, um Ihnen den Alltag zu erleichtern. Über sichere Online-Portale können Unterlagen einfach ausgetauscht, Dokumente archiviert und Auswertungen jederzeit eingesehen werden. So behalten Sie Ihre Zahlen im Blick und gewinnen Freiräume für Ihr Kerngeschäft."
+        },
+        {
+          "title": "Fachwissen, das aktuell bleibt",
+          "text": "Hohe Beratungsqualität sichern wir durch kontinuierliche Fort- und Weiterbildung. Steuerrecht und betriebswirtschaftliche Rahmenbedingungen ändern sich stetig – wir bleiben für Sie auf dem neuesten Stand und setzen dieses Wissen gezielt für Ihren Erfolg ein."
+        },
+        {
+          "title": "Unser Anspruch",
+          "text": "Wir stehen für Qualität, Zuverlässigkeit und eine Beratung auf Augenhöhe. Unser Ziel ist es, Ihnen nicht nur fachlich, sondern auch menschlich ein verlässlicher Partner zu sein – heute und in Zukunft."
+        },
+        {
+          "title": "Unsere Mission",
+          "text": "Wir nutzen digitale Möglichkeiten und fundiertes Fachwissen, um unseren Mandanten klare, verständliche und praxisnahe Lösungen zu bieten. Dabei denken wir voraus und unterstützen Sie dabei, fundierte Entscheidungen zu treffen."
+        },
+        {
+          "title": "Unsere Vision",
+          "text": "Wir wollen als moderne, persönliche Wirtschaftskanzlei wahrgenommen werden, die ihre Mandanten langfristig begleitet und erfolgreich durch steuerliche, wirtschaftliche und digitale Veränderungen führt."
+        },
+        {
+          "title": "Unsere Standorte",
+          "text": "Wir sind an zwei Standorten für Sie da: Düsseldorf und Berlin"
+        }
+      ],
       "learnMore": "Mehr erfahren"
     },
     "servicesTitle": "Unsere Dienstleistungen",
@@ -159,83 +191,262 @@
     }
   },
   "services": {
-    "tax": {
-      "title": "Individuelle Steuerlösungen für maximale gesetzliche Einsparungen",
+    "businessConsulting": {
+      "title": "Existenzgründung",
+      "subtitle": "Unsere Unterstützung für Ihre Gründung",
+      "texts": [
+        {
+          "title": null,
+          "text": "Der Schritt in die Selbstständigkeit bringt viele Chancen mit sich – aber auch zahlreiche Fragen. Entscheidungen zur Rechtsform, Finanzierung, Preisgestaltung oder Organisation wirken sich langfristig auf den Erfolg Ihres Unternehmens aus. Da es selten nur eine \u201Crichtige\u201D Lösung gibt, kommt es auf Ihre persönliche Situation, Ihre Ziele und eine sorgfältige Planung an."
+        },
+        {
+          "title": null,
+          "text": "Eine gute Geschäftsidee und unternehmerischer Mut sind wichtige Voraussetzungen. Ebenso entscheidend ist jedoch eine fundierte Vorbereitung. Wer frühzeitig plant und sich professionell beraten lässt, vermeidet kostspielige Fehler und schafft eine stabile Grundlage für eine erfolgreiche Selbstständigkeit."
+        },
+        {
+          "title": "Ihr Mehrwert",
+          "text": "Eine professionelle Gründungsberatung ist eine Investition, die sich strategisch und finanziell auszahlt. Wir helfen Ihnen, fundierte Entscheidungen zu treffen, Risiken zu minimieren und Ihr Unternehmen von Anfang an auf ein solides Fundament zu stellen."
+        }
+      ],
       "content": [
         [
-          "Erstellung von Einkommensteuer-, Körperschaftsteuer-, Gewerbesteuer- und Umsatzsteuererklärungen",
-          "Beratung Land- und Forstwirtschaft"
+          "Erstellung von Businessplänen, Rentabilitäts- und Liquiditätsberechnungen",
+          "Finanzierungsplanung sowie Unterstützung bei Bank- und Fördergesprächen"
         ],
-        ["Übernahme von Verhandlungen mit dem Finanzamt", "Einsprüche"],
-        ["Einholung verbindlicher Auskünfte"],
+        ["Beratung zu Fördermitteln und öffentlichen Zuschüssen"],
         [
-          "Beratung in allen Steuerfragen",
-          "Unterstützung und Begleitung bei Steuerfahndungs und Steuerstrafverfahren"
-        ],
-        [
-          "Kontrolle von Steuerbescheiden",
-          "Unterstützung und Beratung bei Betriebsprüfungen"
-        ],
-        ["Steuerliche Umstrukturierung", "Unternehmensnachfolge"]
-      ]
-    },
-    "accounting": {
-      "title": "Buchhaltung",
-      "content": [
-        [
-          "Sonderbuchhaltung für Land- und Forstwirtschaft, Autohäuser, Handwerker und Gesundheitsberufe"
+          "Klärung umsatzsteuerlicher Fragestellungen",
+          "Einführung und Einrichtung der Finanzbuchhaltung"
         ],
         [
-          "Erstellung und fristgerechte Abgabe von Umsatzsteuervoranmeldungen und zusammenfassenden Meldungen"
+          "Unterstützung bei Preisgestaltung, Kalkulation und Büroorganisation",
+          "Beratung zur Personalplanung"
         ],
-        [],
+        ["Erstellung von Gründungsgutachten"],
         [
-          "Einrichtung und Führung der Finanzbuchhaltung einschließlich Anlagenbuchhaltung"
-        ],
-        [
-          "Monatliche betriebswirtschaftliche Auswertungen und betriebswirtschaftliche Analysen"
+          "Einschätzung von Markt- und Erfolgschancen",
+          "Auswahl der steuerlich und wirtschaftlich passenden Rechtsform"
         ]
       ]
     },
-    "audit": {
-      "title": "Audit",
+
+    "financialAccounting": {
+      "title": "Finanzbuchhaltung",
+      "subtitle": "Unsere Leistungen im Bereich Finanzbuchhaltung",
+      "texts": [
+        {
+          "title": null,
+          "text": "Wir übernehmen Ihre Finanzbuchhaltung, damit Sie sich voll und ganz auf Ihr Tagesgeschäft konzentrieren können. Eine ordnungsgemäße und aussagekräftige Buchhaltung ist die Grundlage für fundierte unternehmerische Entscheidungen. Umso wichtiger ist es, dass alle Geschäftsvorfälle korrekt, aktuell und nachvollziehbar erfasst werden."
+        },
+        {
+          "title": null,
+          "text": "Wir beraten Sie umfassend in allen Fragen des Rechnungswesens und unterstützen Sie beim Aufbau einer klar strukturierten und transparenten Finanzbuchhaltung – ganz gleich, ob Sie Ihre Buchhaltung selbst führen oder diese vollständig an uns auslagern möchten."
+        },
+        {
+          "title": "Digital, effizient und aussagekräftig",
+          "text": "Unsere Arbeit basiert auf modernen, digitalen Softwarelösungen, die eine sichere und effiziente Verarbeitung Ihrer Daten gewährleisten – selbstverständlich unter Einhaltung der gesetzlichen Vorgaben zur digitalen Buchführung."
+        },
+        {
+          "title": null,
+          "text": "Regelmäßige betriebswirtschaftliche Auswertungen liefern Ihnen aussagekräftige Kennzahlen und schaffen Transparenz über die wirtschaftliche Entwicklung Ihres Unternehmens. So können Abweichungen frühzeitig erkannt und rechtzeitig Maßnahmen ergriffen werden."
+        }
+      ],
       "content": [
         [
-          "Unterstützung und Begleitung bei Steuerermittlungen und Selbstanzeigen"
-        ],
-        [],
-        [],
-        ["Übernahme von Verhandlungen mit dem Finanzamt"],
-        ["Unterstützung und Beratung bei Betriebsprüfungen"]
-      ]
-    },
-    "consulting": {
-      "title": "Unternehmensberatung",
-      "content": [
-        [
-          "Beratung bei Unternehmenskäufen oder -verkäufen sowie bei allen Arten von Unternehmensumstrukturierungen"
+          "Einrichtung und laufende Führung der Finanzbuchhaltung einschließlich Anlagenbuchhaltung"
         ],
         [
-          "AdviBeratung in allen finanziellen und betriebswirtschaftlichen Fragence on all financial and business issues"
+          "Branchenbezogene Spezialbuchführungen, z. B. für Handwerksbetriebe, Autohäuser und Heilberufe"
+        ],
+        ["Kostenstellen- und Kostenarten-Auswertungen"],
+        [
+          "Monatliche betriebswirtschaftliche Auswertungen und individuelle Geschäftsanalysen"
         ],
         [],
-        ["Erstellung von Planbilanzen und Plangewinnrechnungens"],
-        ["Durchführung von Unternehmensbewertungen"],
         [
-          "Betriebswirtschaftliche Analysen der Vermögens-, Finanz- und Ertragslage"
+          "Erstellung und fristgerechte Übermittlung der Umsatzsteuervoranmeldungen sowie der Zusammenfassenden Meldungen"
         ]
       ]
     },
-    "payroll": {
-      "title": "Lohnbuchhaltung",
+
+    "financialStatements": {
+      "title": "Bilanzen und Steuererklärungen",
+      "subtitle": "Unsere Leistungen im Bereich Bilanzen und Steuererklärungen",
+      "texts": [
+        {
+          "title": null,
+          "text": "Warum sich mit komplexen und zeitaufwendigen Pflichten beschäftigen, wenn Sie sich auf Ihr Kerngeschäft konzentrieren können? Die Erstellung von Jahresabschlüssen und Steuererklärungen erfordert nicht nur Fachwissen, sondern auch den sicheren Umgang mit leistungsfähigen EDV-Systemen, abgestimmten Arbeitsabläufen und sorgfältigen Kontrollen."
+        },
+        {
+          "title": null,
+          "text": "Wir übernehmen diese Aufgaben für Sie – zuverlässig, strukturiert und termingerecht. Das Ergebnis ist ein professionell aufbereiteter Jahresabschluss mit den zugehörigen Steuererklärungen. Im Rahmen einer persönlichen Jahresabschlussbesprechung erläutern wir Ihnen die Ergebnisse verständlich und stellen Ihnen die Unterlagen in einer klaren und ansprechenden Form zur Verfügung. Damit schaffen Sie eine solide Grundlage für Gespräche mit Banken, Behörden und anderen Geschäftspartnern."
+        },
+        {
+          "title": "Sicherheit und Entlastung",
+          "text": "Damit Sie sich jederzeit auf das Wesentliche konzentrieren können und in steuerlichen sowie rechtlichen Fragen auf der sicheren Seite sind, erstellen wir für Sie Jahresabschlüsse nach Handels- und Steuerrecht. Darüber hinaus übernehmen wir sämtliche betrieblichen Steuererklärungen sowie besondere Abschlüsse und Auswertungen. Auch private Steuererklärungen gehören zu unserem Leistungsspektrum."
+        }
+      ],
       "content": [
-        ["Erstellung der Lohnbuchhaltung"],
-        ["Arbeitskostenoptimierung nettomaxx"],
+        [
+          "Erstellung von Jahresabschlüssen nach Handels- und Steuerrecht",
+          "Erstellung von Einnahmen-Überschuss-Rechnungen"
+        ],
+        [
+          "Erstellung der Umsatzsteuererklärung",
+          "Erstellung der Gewerbesteuererklärung"
+        ],
         [],
         [
-          "Rechtsberatung in Zusammenarbeit mit der Kanzlei Friedrich, Westhues-Wedig & Coll."
+          "Zwischenbilanzen, vorläufige Kreditbilanzen sowie Liquidationsbilanzen"
         ],
-        ["Internationale Entsendung von Arbeitnehmern"]
+        [
+          "Private Steuererklärungen, z. B. Einkommensteuer- und Erbschaftsteuererklärungen"
+        ],
+        ["Erstellung der Körperschaftsteuererklärung", "Gewinnfeststellungen"]
+      ]
+    },
+
+    "payrollAccounting": {
+      "title": "Lohn- und Gehaltsabrechnung",
+      "subtitle": "Unsere Leistungen im Überblick",
+      "texts": [
+        {
+          "title": null,
+          "text": "Wir übernehmen Ihre Lohn- und Gehaltsabrechnung kompetent, termingerecht und rechtssicher. Durch die Auslagerung dieses sensiblen Bereichs sparen Sie Zeit und Kosten, reduzieren Ihren internen Verwaltungsaufwand und gewinnen Sicherheit durch die Betreuung durch erfahrene Fachkräfte."
+        },
+        {
+          "title": "Einfach, flexibel und effizient",
+          "text": "Der Wechsel zu uns ist unkompliziert: Sie übermitteln uns einmal die relevanten Lohn- und Gehaltsunterlagen. Danach informieren Sie uns lediglich über Änderungen – etwa bei Ein- und Austritten, Gehaltsanpassungen oder Abwesenheiten. Alles Weitere erledigen wir zuverlässig für Sie. Gerne erstellen wir Ihnen einen unverbindlichen Kostenvergleich zwischen Ihrer bisherigen internen Abrechnung und der Auslagerung an unsere Kanzlei. So erkennen Sie schnell, welches Einspar- und Optimierungspotenzial für Ihr Personalmanagement besteht."
+        },
+        {
+          "title": "Mehr als Abrechnung",
+          "text": "Neben der reinen Lohn- und Gehaltsabrechnung profitieren Sie von unserer ganzheitlichen Beratung. Wir behalten steuerliche, rechtliche und wirtschaftliche Aspekte stets im Blick und unterstützen Sie bei personalrelevanten Fragestellungen über die Abrechnung hinaus."
+        }
+      ],
+      "content": [
+        ["Laufende Lohn- und Gehaltsabrechnung"],
+        ["Erstellung aller erforderlichen Meldungen und Bescheinigungen"],
+        [],
+        [
+          "Unterstützung bei internationalen Sachverhalten, z. B. bei Arbeitnehmerentsendungen"
+        ],
+        [
+          "Zusammenarbeit mit spezialisierten Rechtsanwälten bei arbeitsrechtlichen Fragestellungen"
+        ],
+        [
+          "Lohnkostenoptimierung und Beratung zu steuerlichen Gestaltungsmöglichkeiten"
+        ]
+      ]
+    },
+
+    "assetTransfer": {
+      "title": "Vermögensübergabe / -übertragung",
+      "subtitle": "Unsere Leistungen im Bereich Erbfolge und Vermögensplanung",
+      "texts": [
+        {
+          "title": null,
+          "text": "Eine durchdachte Vermögens- und Nachfolgeplanung schafft Sicherheit – für Sie, Ihre Familie und Ihr Unternehmen. Wir stehen Ihnen als unabhängiger und vertrauensvoller Berater zur Seite und unterstützen Sie bei der Beurteilung von Vermögensanlagen sowie bei der langfristigen, steuerlich optimierten Gestaltung Ihres Vermögens. Auf Grundlage Ihrer persönlichen Einkommens- und Vermögenssituation entwickeln wir individuelle Strategien, die sowohl Ihre steuerlichen Möglichkeiten als auch Ihre persönlichen Vorstellungen berücksichtigen. Eine frühzeitige Planung der Vermögensübertragung kann erhebliche steuerliche Vorteile bringen und hilft, spätere Konflikte zu vermeiden."
+        },
+        {
+          "title": "Verlässliche Begleitung",
+          "text": "Loyalität, Erfahrung und fachliche Kompetenz bilden die Grundlage unserer Beratung. Gemeinsam entwickeln wir Lösungen, die zu Ihrer Lebenssituation passen und Ihnen sowie der nächsten Generation Orientierung und Sicherheit geben."
+        },
+        {
+          "title": "Rechtlicher Hinweis",
+          "text": "Finanzdienstleistungen werden in Zusammenarbeit mit einer zur Unternehmensgruppe gehörenden Vermögensberatung und -verwaltung (FINMA-reguliert) durchgeführt. Die Nexora führt selbst keine Finanzdienstleistungen durch."
+        }
+      ],
+      "content": [
+        [
+          "Prüfung von Testamenten, Erbverträgen und Schenkungen auf steuerliche Auswirkungen"
+        ],
+        ["Gestaltungsberatung bei Grundstücksübertragungen und -schenkungen"],
+        ["Erstellung von Erbschaft- und Schenkungsteuererklärungen"],
+        [
+          "Frühzeitige Planung der privaten und betrieblichen Erbfolge",
+          "Steuerlich optimierte Aufteilung und Strukturierung des Vermögens"
+        ],
+        ["Entwicklung von Steuerkonzepten zur vorweggenommenen Erbfolge"],
+        ["Unternehmerische Nachfolgeplanung aus steuerlicher Sicht"]
+      ]
+    },
+
+    "businessManagement": {
+      "title": "Betriebswirtschaftliche und Unternehmensberatung",
+      "subtitle": "Unsere Leistungen im Bereich der betriebswirtschaftlichen Beratung",
+      "texts": [
+        {
+          "title": null,
+          "text": "Damit Ihr Unternehmen auch langfristig erfolgreich bleibt, sind klare Zahlen und vorausschauende Entscheidungen entscheidend. Steigender Wettbewerbsdruck, zunehmende Komplexität und engere Märkte erfordern eine betriebswirtschaftliche Planung, die Chancen und Risiken frühzeitig sichtbar macht. Wir begleiten Sie mit einer professionellen betriebswirtschaftlichen Beratung in allen Phasen der Unternehmensentwicklung – von der Existenzgründung über Wachstum und Expansion bis hin zur Unternehmensnachfolge. Dabei legen wir großen Wert auf verständliche Auswertungen, realistische Planungen und praxisnahe Empfehlungen."
+        },
+        {
+          "title": "Planungssicherheit durch klare Analysen",
+          "text": "Langfristige Unternehmens- und Liquiditätsplanungen sowie der Vergleich unterschiedlicher Finanzierungsformen schaffen Transparenz und Sicherheit. Ob Kauf, Leasing, Darlehen, Factoring oder alternative Finanzierungsmodelle – wir unterstützen Sie bei der Auswahl der für Ihr Unternehmen passenden Lösung. Kosten-Nutzen-Analysen und die Prüfung möglicher Fördermaßnahmen ergänzen unsere Beratung. Darüber hinaus beraten wir Sie zu betrieblichem und privatem Mindestumsatz- und Gewinnbedarf sowie zu Fragen der Altersvorsorge und Vermögensbildung – immer abgestimmt auf Ihre persönliche Situation."
+        }
+      ],
+      "content": [
+        [
+          "Beratung zur Unternehmensentwicklung, z. B. bei Existenzgründung und Aufbauphase",
+          "Erstellung von Betriebsentwicklungsprognosen (Gewinn-, Kapital- und Liquiditätsplanung)"
+        ],
+        ["Durchführung von Kosten-Nutzen-Analysen"],
+        ["Erstellung aussagekräftiger Finanz- und Unternehmensanalysen"],
+        [
+          "Beratung zu Wirtschaftsförderungs- und Unterstützungsmaßnahmen",
+          "Berechnung des betrieblichen und privaten Mindestumsatz- und Gewinnbedarfs"
+        ],
+        ["Beratung zu Altersvorsorge und Vermögensbildung"],
+        [
+          "Vergleich und Bewertung von Finanzierungsalternativen (Kauf, Leasing, Darlehen, Factoring, Mezzaninfinanzierungen u. a.)"
+        ]
+      ]
+    },
+
+    "legalAdvisory": {
+      "title": "Hilfe bei Rechtsberatung durch Partneranwälte",
+      "subtitle": "Ihr Vorteil",
+      "texts": [
+        {
+          "title": null,
+          "text": "Rechtliche Fragestellungen sind oft eng mit steuerlichen und wirtschaftlichen Entscheidungen verknüpft. Damit Sie auch in juristischen Angelegenheiten gut beraten sind, arbeiten wir bei Bedarf eng mit erfahrenen Partneranwälten zusammen. Über unser bewährtes Netzwerk vermitteln wir Ihnen den passenden Ansprechpartner und begleiten die Abstimmung zwischen Steuer- und Rechtsberatung. So erhalten Sie fundierte, praxisnahe Lösungen, die rechtliche, steuerliche und wirtschaftliche Aspekte sinnvoll miteinander verbinden – ohne Reibungsverluste und mit klaren Zuständigkeiten."
+        },
+        {
+          "title": null,
+          "text": "Ob Vertragsgestaltung, gesellschaftsrechtliche Fragen, arbeitsrechtliche Themen oder Nachfolgeregelungen – wir sorgen dafür, dass Sie im Bedarfsfall rechtlich kompetent und zuverlässig unterstützt werden."
+        }
+      ],
+      "content": [
+        [
+          "Zugang zu qualifizierten Partneranwälten verschiedener Fachrichtungen"
+        ],
+        ["Enge Abstimmung zwischen Rechts- und Steuerberatung"],
+        [],
+        ["Klare Kommunikation und kurze Entscheidungswege"],
+        ["Ganzheitliche Betrachtung Ihrer Fragestellungen"],
+        []
+      ]
+    },
+
+    "financialServices": {
+      "title": "Finanzdienstleistungen (reguliert)",
+      "subtitle": "Ihr Mehrwert",
+      "texts": [
+        {
+          "title": null,
+          "text": "Ergänzend zu unserer steuerlichen und betriebswirtschaftlichen Beratung ermöglichen wir Ihnen den Zugang zu professionellen Finanzdienstleistungen. Diese erfolgen über eine zur Unternehmensgruppe gehörende Vermögensberatung und Vermögensverwaltung, die der Aufsicht der Schweizer Finanzaufsicht unterliegt. So profitieren Sie von einer ganzheitlichen Betrachtung Ihrer finanziellen Situation. Steuerliche, wirtschaftliche und vermögensbezogene Fragestellungen können sinnvoll aufeinander abgestimmt werden – transparent, strukturiert und unter Einhaltung hoher regulatorischer Standards."
+        },
+        {
+          "title": null,
+          "text": "Unser Ziel ist es, Sie auch in finanziellen Fragen verlässlich zu begleiten und langfristig tragfähige Lösungen zu entwickeln."
+        }
+      ],
+      "content": [
+        ["Zugang zu regulierter Vermögensberatung und -verwaltung"],
+        ["Ganzheitliche Abstimmung von Steuer-, Vermögens- und Finanzthemen"],
+        [],
+        ["Koordinierte Beratung aus einer Hand"],
+        ["Klare Strukturen und hohe regulatorische Sicherheit"],
+        []
       ]
     }
   }

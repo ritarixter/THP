@@ -3,9 +3,11 @@ import { useTranslation } from "react-i18next";
 
 import styles from "./Footer.module.scss";
 import logo from "../../images/logo.svg";
+import { useLocalizedPath } from "../../hooks/useLocalizedPath";
 
 export default function Footer() {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   const locationText = t("footer.title.location");
   const phoneText = t("footer.title.phone");
@@ -22,23 +24,26 @@ export default function Footer() {
       <div className={styles.blockNav}>
         <div className={styles.column}>
           <p className={styles.column_title}>{t("footer.company.title")}</p>
-          <Link to="/#aboutUs" className={styles.column_text}>
+          <Link to={localizedPath("/#aboutUs")} className={styles.column_text}>
             {t("footer.company.aboutUs")}
           </Link>
-          <Link to="/#services" className={styles.column_text}>
+          <Link to={localizedPath("/#services")} className={styles.column_text}>
             {t("footer.company.service")}
           </Link>
         </div>
 
         <div className={styles.column}>
           <p className={styles.column_title}>{t("footer.contacts.title")}</p>
-          <Link to="/contacts" className={styles.column_text}>
+          <Link to={localizedPath("/contacts")} className={styles.column_text}>
             {t("footer.contacts.contacts")}
           </Link>
-          <Link to="/contacts#team" className={styles.column_text}>
+          <Link
+            to={localizedPath("/contacts#team")}
+            className={styles.column_text}
+          >
             {t("footer.contacts.team")}
           </Link>
-          <Link to="/#contacts" className={styles.column_text}>
+          <Link to={localizedPath("/#contacts")} className={styles.column_text}>
             {t("footer.contacts.contactUs")}
           </Link>
         </div>
@@ -46,7 +51,7 @@ export default function Footer() {
 
       <div className={styles.blockInfoContainer}>
         <div className={styles.blockInfo}>
-          <Link to="/" className={styles.logo}>
+          <Link to={localizedPath("/")} className={styles.logo}>
             <img src={logo} alt={t("common.alt.logo")} />
           </Link>
 

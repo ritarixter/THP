@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./Location.module.scss";
 
 const MAP_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.123456789012!2d6.123456!3d51.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8a1234567890%3A0x1234567890abcdef!2sAlte%20Poststra%C3%9Fe%2090%2C%2046514%20Schermbeck%2C%20Germany!5e0!3m2!1sen!2sde!4v1700000000000!5m2!1sen!2sde";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310847.0888069523!2d13.09512029393772!3d52.50641872082704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2ses!4v1773225960675!5m2!1sen!2ses";
 
 const Location = () => {
   const { t } = useTranslation();

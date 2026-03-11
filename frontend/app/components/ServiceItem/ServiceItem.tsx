@@ -4,20 +4,31 @@ export interface IServiceItemProps {
   label: string;
   title: string;
   content: string[][];
+  subtitle?: string;
+  texts?: { title: string | null; text: string }[];
 }
 export default function ServiceItem({
   label,
   title,
   content,
+  subtitle,
+  texts,
 }: IServiceItemProps) {
   return (
     <>
       <div className={styles.content}>
         <h2 className={styles.content__title}>{title}</h2>
+        {subtitle && <h3 className={styles.content__subtitle}>{subtitle}</h3>}
 
         <div className={styles.content__wrapper}>
           <div className={styles.content__center}>
-            <div className={styles.content__icon}>{label}</div>
+            <div className={styles.content__icon}>
+              <img
+                className={styles.content__icon_image}
+                src={label}
+                alt={title}
+              />
+            </div>
 
             {content[0] && content[0].length > 0 && (
               <div className={`${styles.item} ${styles.item__1}`}>
@@ -78,17 +89,18 @@ export default function ServiceItem({
                   ))}
                 </ul>
                 <svg
-                  width="533"
-                  height="62"
-                  viewBox="0 0 533 62"
+                  width="534"
+                  height="63"
+                  viewBox="0 0 534 63"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M0 0.5H256L527.5 57.5" stroke="#4878FE" />
-                  <circle
-                    cx="529"
-                    cy="58"
-                    r="3.5"
+                  <path
+                    d="M0 61.5371H256.133L527.775 4.50348"
+                    stroke="#4878FE"
+                  />
+                  <path
+                    d="M529.275 7.50488C531.209 7.50488 532.777 5.93708 532.777 4.00293C532.777 2.0686 531.21 0.5 529.275 0.5C527.341 0.50007 525.773 2.06864 525.773 4.00293C525.774 5.93703 527.341 7.50481 529.275 7.50488Z"
                     fill="#4878FE"
                     stroke="#4878FE"
                   />
@@ -169,10 +181,29 @@ export default function ServiceItem({
             )}
           </div>
         </div>
+        {texts && texts.length > 0 && (
+          <div className={styles.texts}>
+            {texts.map((item, index) => (
+              <div
+                key={index}
+                className={`${styles.texts__item} ${item.title ? styles.texts__item_titled : styles.texts__item_indented}`}
+              >
+                {item.title && (
+                  <h4 className={styles.texts__title}>{item.title}</h4>
+                )}
+                <p className={styles.texts__text}>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className={styles.content__mobile}>
-        <div className={styles.content__icon}>{label}</div>
+        <h3 className={styles.content__subtitle}>{subtitle}</h3>
+
+        <div className={styles.content__icon}>
+          <img className={styles.content__icon_image} src={label} alt={title} />
+        </div>
 
         <div className={styles.content__mobile_lists}>
           {[...content]
@@ -189,6 +220,22 @@ export default function ServiceItem({
               </ul>
             ))}
         </div>
+
+        {texts && texts.length > 0 && (
+          <div className={styles.texts}>
+            {texts.map((item, index) => (
+              <div
+                key={index}
+                className={`${styles.texts__item} ${item.title ? styles.texts__item_titled : styles.texts__item_indented}`}
+              >
+                {item.title && (
+                  <h4 className={styles.texts__title}>{item.title}</h4>
+                )}
+                <p className={styles.texts__text}>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 "use client";
 import styles from "./Form.module.scss";
-import img from "../../images/home//form/form.png";
+import img from "../../images/home/form/form.png";
 import { useState } from "react";
 import type { FormEvent } from "react";
 import Loader from "../Loader/Loader";

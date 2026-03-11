@@ -24,6 +24,13 @@
   background-color: var(--cl-gray-1);
 }
 
+.logo__block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 56px;
+}
+
 .mail {
   padding: 40px;
   border-left: 1px solid var(--cl-black);
@@ -137,6 +144,7 @@
   position: relative;
   z-index: 20;
 
+  display: none;
   &_open {
     color: var(--cl-white);
   }
@@ -262,6 +270,10 @@
   .button {
     width: 120px;
   }
+
+  .logo__block {
+    gap: 32px;
+  }
 }
 
 @include responsive(screen) {
@@ -284,6 +296,12 @@
     justify-content: space-between;
     padding: 20px;
     height: 86px;
+  }
+
+  .logo__block {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .container_open {
@@ -317,16 +335,15 @@
       outline: none;
     }
   }
-
   .line1 {
     width: 1.5rem;
     height: 0.125rem;
     background: var(--cl-black);
     transition: all 0.3s linear;
     position: relative;
-    transform-origin: 1px;
+    transform-origin: center;
     &_active {
-      transform: rotate(45deg);
+      transform: translateY(0.5rem) rotate(45deg);
       background: var(--cl-black);
     }
 
@@ -341,7 +358,7 @@
     background: var(--cl-black);
     transition: all 0.3s linear;
     position: relative;
-    transform-origin: 1px;
+    transform-origin: center;
 
     &_active {
       transform: translateX(6px);
@@ -361,10 +378,10 @@
     background: var(--cl-black);
     transition: all 0.3s linear;
     position: relative;
-    transform-origin: 1px;
+    transform-origin: center;
 
     &_active {
-      transform: rotate(-45deg);
+      transform: translateY(-0.5rem) rotate(-45deg);
       background: var(--cl-black);
     }
 
@@ -487,7 +504,7 @@
     gap: 10px;
     max-width: 250px;
     width: 100%;
-    padding: 17.5px 48px;
+    padding: 17.5px 0;
     border: 5px solid var(--cl-green-3);
     align-items: center;
     text-transform: uppercase;
@@ -511,4 +528,7 @@
 }
 
 @include responsive(phone) {
+}
+.logo {
+  width: 220px;
 }

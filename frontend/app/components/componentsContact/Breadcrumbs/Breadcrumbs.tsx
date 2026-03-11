@@ -1,13 +1,15 @@
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import styles from "./Breadcrumbs.module.scss";
+import { useLocalizedPath } from "../../../hooks/useLocalizedPath";
 
 const Breadcrumbs = () => {
   const { t } = useTranslation();
+  const localizedPath = useLocalizedPath();
 
   return (
     <nav className={styles.breadcrumbs} aria-label={t("breadcrumbs.ariaLabel")}>
-      <Link to="/" className={styles.companyLink}>
+      <Link to={localizedPath("/")} className={styles.companyLink}>
         {t("breadcrumbs.company")}
       </Link>
       <span className={styles.separator}>{t("breadcrumbs.separator")}</span>

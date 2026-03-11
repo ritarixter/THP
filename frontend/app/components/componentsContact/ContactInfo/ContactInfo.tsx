@@ -4,21 +4,25 @@ import styles from "./ContactInfo.module.scss";
 const ContactInfo = () => {
   const { t } = useTranslation();
 
-  const addressText = t("contactInfo.items.address");
+  const addressText1 = t("contactInfo.items.address1");
+  const addressText2 = t("contactInfo.items.address2");
   const phoneText = t("contactInfo.items.phone");
   const emailText = t("contactInfo.items.email");
 
   const phoneHref = `tel:${phoneText.replace(/[^\d+]/g, "")}`;
   const emailHref = `mailto:${emailText}`;
-  const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    addressText
+  const mapsHref1 = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    addressText1
+  )}`;
+  const mapsHref2 = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    addressText2
   )}`;
 
   const contacts = [
     {
       id: 1,
       type: "address" as const,
-      href: mapsHref,
+      href: mapsHref1,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +47,37 @@ const ContactInfo = () => {
           />
         </svg>
       ),
-      text: addressText,
+      text: addressText1,
+    },
+    {
+      id: 4,
+      type: "address" as const,
+      href: mapsHref2,
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="22"
+          viewBox="0 0 20 24"
+          fill="none"
+        >
+          <path
+            d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z"
+            stroke="#70F181"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z"
+            stroke="#70F181"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      ),
+      text: addressText2,
     },
     {
       id: 2,
