@@ -176,7 +176,7 @@ export default function Header() {
         className={`${styles.container} ${openMenu ? styles.container_open : ""}`}
       >
         <div className={styles.logo__block}>
-          <div className={styles.button}>
+          {/* <div className={styles.button}>
             <svg
               width="33"
               height="32"
@@ -190,7 +190,7 @@ export default function Header() {
                 strokeWidth="3"
               />
             </svg>
-          </div>
+          </div> */}
           <div className={styles.button__burger}>
             <Gamburger open={openMenu} setOpen={setOpenMenu} />
           </div>

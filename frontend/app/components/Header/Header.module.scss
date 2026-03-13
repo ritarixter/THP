@@ -11,6 +11,7 @@
   justify-content: space-between;
   max-width: 1920px;
   margin: 0 auto;
+  padding-left: 176px;
   width: 100%;
 }
 
@@ -124,6 +125,10 @@
 
 .select:hover {
   border: none;
+}
+
+.button__burger {
+  display: none;
 }
 
 .select:focus {
@@ -527,8 +532,21 @@
   }
 }
 
-@include responsive(phone) {
+@include responsive(fullscreen) {
+  .container {
+    padding-left: 120px;
+  }
 }
+@include responsive(screen) {
+  .container {
+    padding-left: 20px;
+  }
+
+  .button__burger {
+    display: block;
+  }
+}
+
 .logo {
   width: 220px;
 }
